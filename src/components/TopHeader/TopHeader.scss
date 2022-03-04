@@ -1,5 +1,6 @@
 .TopHeader{
-    background: linear-gradient(to bottom , rgba(35, 35, 35, 0.822) , rgba(35, 35, 35, 0.836));
+    background: linear-gradient(black, rgba(0, 0, 0, 0.87));
+    backdrop-filter: blur(10px);
     height: 70px;
     backdrop-filter: blur(10px);
     display: flex;

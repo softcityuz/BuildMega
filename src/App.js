@@ -30,12 +30,12 @@ const App = () => {
     return () => window.removeEventListener("load", handleLoading);
   }, []);
   const map = [
-    { url: "news", kompannent: <News /> },
-    { url: "singilur", kompannent: <SingleNews /> },
-    { url: "contact", kompannent: <Contact /> },
+    {id:1, url: "news", kompannent: <News /> },
+    {id:2, url: "singilur", kompannent: <SingleNews /> },
+    {id:3, url: "contact", kompannent: <Contact /> },
   ];
   const mapRoute = map.map((a) => (
-    <Route
+    <Route key={a.id}
       path={a.url}
       element={
         <Suspense

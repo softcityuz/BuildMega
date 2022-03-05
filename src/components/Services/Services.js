@@ -14,67 +14,84 @@ import { faUserGroup,faRulerCombined, faCity, faHouseChimneyWindow, faPencil } f
 
 
 function Services() {
+  const map = [
+    {
+      id: 1,
+      icon: faRulerCombined,
+      title1: "PRE_CONSTRACTION SERVICES",
+      title2: ` Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy`,
+    },
+    {
+      id: 2,
+      icon: faUserGroup,
+      title1: "PRE_CONSTRACTION SERVICES",
+      title2: ` Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy`,
+    },
+    {
+      id: 3,
+      icon: faHive,
+      title1: "PRE_CONSTRACTION SERVICES",
+      title2: ` Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy`,
+    },
+  ];
+  const map2 = map.map((a) => (
+    <div className="col-md-4">
+      <div className="icon">
+        <FontAwesomeIcon icon={a.icon} />
+      </div>
+      <div className="info">
+        <h5>{a.title1}</h5>
+        <p>
+        {a.title2}
+        </p>
+      </div>
+    </div>
+  ));
   return (
     <div className="Services">
       <div className="container">
         <div className="intro">
-            <h2>Bizning ximatlar</h2>
-          </div>
-        <div className="row">
-          <div className="col-md-4">
-            <div className="icon">
-            <FontAwesomeIcon icon={faRulerCombined}/>
-              </div>
-            <div className="info">
-              <h5>PRE_CONSTRACTION SERVICES</h5>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy  </p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="icon">
-                  <FontAwesomeIcon icon={faUserGroup}></FontAwesomeIcon>
-              </div>
-            <div className="info">
-              <h5>PRE_CONSTRACTION SERVICES</h5>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy  </p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="icon">
-                <FontAwesomeIcon icon={faHive}></FontAwesomeIcon>
-              </div>
-            <div className="info">
-              <h5>PRE_CONSTRACTION SERVICES</h5>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy  </p>
-            </div>
-          </div>
+          <h2>Bizning ximatlar</h2>
         </div>
+        <div className="row">{map2}</div>
         <div className="row the_second">
           <div className="col-md-4">
             <div className="icon">
-            <FontAwesomeIcon icon={faCity}></FontAwesomeIcon>
-              </div>
+              <FontAwesomeIcon icon={faCity}></FontAwesomeIcon>
+            </div>
             <div className="info">
               <h5>PRE_CONSTRACTION SERVICES</h5>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy  </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy{" "}
+              </p>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon">
-                  <FontAwesomeIcon icon={faHouseChimneyWindow}></FontAwesomeIcon>
-              </div>
+              <FontAwesomeIcon icon={faHouseChimneyWindow}></FontAwesomeIcon>
+            </div>
             <div className="info">
               <h5>PRE_CONSTRACTION SERVICES</h5>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy  </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy{" "}
+              </p>
             </div>
           </div>
           <div className="col-md-4">
             <div className="icon">
-                <FontAwesomeIcon icon={faPencil}></FontAwesomeIcon>
-              </div>
+              <FontAwesomeIcon icon={faPencil}></FontAwesomeIcon>
+            </div>
             <div className="info">
               <h5>PRE_CONSTRACTION SERVICES</h5>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy  </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy{" "}
+              </p>
             </div>
           </div>
         </div>

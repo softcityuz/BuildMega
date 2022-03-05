@@ -9,7 +9,7 @@ function Header() {
   const mapHeader = [
     { id: 1, name: t("navbar1"), url: "*" },
     { id: 2, name: t("navbar2"), url: "*" },
-    { id: 3, name: t("navbar3"), url: "*" },
+    { id: 3, name: t("navbar3"), url: "project" },
     { id: 4, name: t("navbar4"), url: "news" },
     { id: 5, name: t("navbar5"), url: "contact" },
   ];

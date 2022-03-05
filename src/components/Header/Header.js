@@ -2,8 +2,11 @@ import React from "react";
 import logo from "../../assets/white_logo.png";
 import "./Header.scss";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+  const { t } = useTranslation();
+
   return (
     <div className="Header">
       <div className="container">
@@ -16,19 +19,19 @@ function Header() {
           <div className="links">
             <ul>
               <li>
-                <Link to="/">Biz haqimizda</Link>
+                <Link to="/">{t("navbar1")}</Link>
               </li>
               <li>
-                <Link to="/">Xizmatlar</Link>
+                <Link to="/">{t("navbar2")}</Link>
               </li>
               <li>
-                <Link to="/">Loyihalar</Link>
+                <Link to="/">{t("navbar3")}</Link>
               </li>
               <li>
-                <Link to="/">Blog</Link>
+                <Link to="/">{t("navbar4")}</Link>
               </li>
               <li>
-                <Link to="/">Aloqa</Link>
+                <Link to="/">{t("navbar5")}</Link>
               </li>
             </ul>
           </div>

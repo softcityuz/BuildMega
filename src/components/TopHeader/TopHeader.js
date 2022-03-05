@@ -1,4 +1,5 @@
 import "./TopHeader.scss";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -8,8 +9,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import i18n from "../../i18n";
 
 function TopHeader() {
+  const defaultLang = localStorage.getItem("lang")
+    ? localStorage.getItem("lang")
+    : "uz";
+  const [lang, setLang] = useState(defaultLang);
+
+  const handleChange = (event) => {
+    setLang(event.target.value);
+    localStorage.setItem("lang", event.target.value);
+    i18n.changeLanguage(event.target.value);
+  };
+
   return (
     <div className="TopHeader">
       <div className="container">
@@ -18,7 +31,7 @@ function TopHeader() {
             <div className="adress">
               <p>
                 <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>{" "}
-                Tashkent , Yunusobod 7885
+                Tashkent, Yunusobod 7885
               </p>
             </div>
             <div className="call_me">
@@ -31,6 +44,14 @@ function TopHeader() {
           <div className="right_box">
             <div className="socials">
               <ul>
+                <li className="facebook">
+                  <div className="select">
+                    <select name="lang" value={lang} onChange={handleChange}>
+                      <option value="uz">UZ</option>
+                      <option value="ru">RU</option>
+                    </select>
+                  </div>
+                </li>
                 <li className="facebook">
                   <Link to="/">
                     <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>{" "}

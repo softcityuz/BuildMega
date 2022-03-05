@@ -29,6 +29,30 @@ const App = () => {
     window.addEventListener("load", handleLoading);
     return () => window.removeEventListener("load", handleLoading);
   }, []);
+  const map = [
+    { url: "news", kompannent: <News /> },
+    { url: "singilur", kompannent: <SingleNews /> },
+    { url: "contact", kompannent: <Contact /> },
+  ];
+  const mapRoute = map.map((a) => (
+    <Route
+      path={a.url}
+      element={
+        <Suspense
+          fallback={
+            <>
+              <Backdrop className={classes.backdrop} open>
+                <CircularProgress color="inherit" />
+              </Backdrop>{" "}
+            </>
+          }
+        >
+          {" "}
+          {a.kompannent}
+        </Suspense>
+      }
+    />
+  ));
   return (
     <div className="App">
       {isLoading ? (
@@ -42,60 +66,10 @@ const App = () => {
           <TopHeader />
           <Header />
           <Routes>
-            <Route
-              path="news"
-              element={
-                <Suspense
-                  fallback={
-                    <>
-                      <Backdrop className={classes.backdrop} open>
-                        <CircularProgress color="inherit" />
-                      </Backdrop>{" "}
-                    </>
-                  }
-                >
-                  {" "}
-                  <News />
-                </Suspense>
-              }
-            />
-            <Route
-              path="singilur"
-              element={
-                <Suspense
-                  fallback={
-                    <>
-                      <Backdrop className={classes.backdrop} open>
-                        <CircularProgress color="inherit" />
-                      </Backdrop>{" "}
-                    </>
-                  }
-                >
-                  {" "}
-                  <SingleNews />
-                </Suspense>
-              }
-            />
-            <Route
-              path="contact"
-              element={
-                <Suspense
-                  fallback={
-                    <>
-                      <Backdrop className={classes.backdrop} open>
-                        <CircularProgress color="inherit" />
-                      </Backdrop>{" "}
-                    </>
-                  }
-                >
-                  {" "}
-                  <Contact />
-                </Suspense>
-              }
-            />
+            {mapRoute}
             <Route path="*" element={<HomePage />} />
           </Routes>
-          <Footer/>
+          <Footer />
         </>
       )}
     </div>

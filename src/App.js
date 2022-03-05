@@ -8,12 +8,12 @@ import Header from "./components/Header/Header";
 import { Suspense } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Backdrop from "@material-ui/core/Backdrop";
+import Footer from "./components/Footer/Footer";
 import CircularProgress from "@material-ui/core/CircularProgress";
 const SingleNews = React.lazy(() => import("./pages/news/SingleNews"));
 const News = React.lazy(() => import("./pages/news/News"));
 const Contact = React.lazy(() => import("./pages/contact/Contact"));
-const useStyles = makeStyles((
-theme) => ({
+const useStyles = makeStyles((theme) => ({
   backdrop: {
     zIndex: theme.zIndex.drawer + 1,
     color: "#fff",
@@ -95,6 +95,7 @@ const App = () => {
             />
             <Route path="*" element={<HomePage />} />
           </Routes>
+          <Footer/>
         </>
       )}
     </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../components/Footer/Footer";
 import HomeCarousel from "../components/HomeCarousel/HomeCarousel";
 import History from "../components/OurHistory/History";
 import Projects from "../components/Projects/Projects";
@@ -13,7 +12,6 @@ function HomePage() {
       <History />
       <Projects />
       <RecentNews />
-      <Footer />
     </div>
   );
 }

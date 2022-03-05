@@ -7,7 +7,7 @@ function Footer() {
     <div className='Footer'>
         <div className='wrapper container'>
             <div className='left_box'>
-                <a href="" ><img src={logo} /></a>
+                <a href="/htt1/swsw" ><img src={logo}  alt="rasm bor edi!"/></a>
                 <p>Qanaqadir shior yoki uwanga uxwagan narsa yozildi i u uzzzuuu bolishi kerekan</p>   
             </div>    
             <div className='right_box'>

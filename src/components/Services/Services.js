@@ -1,8 +1,14 @@
 import React from "react";
 import "./Services.scss";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faHive} from '@fortawesome/free-brands-svg-icons'
-import { faUserGroup,faRulerCombined, faCity, faHouseChimneyWindow, faPencil } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHive } from "@fortawesome/free-brands-svg-icons";
+import {
+  faUserGroup,
+  faRulerCombined,
+  faCity,
+  faHouseChimneyWindow,
+  faPencil,
+} from "@fortawesome/free-solid-svg-icons";
 // import {
 //   SqueareFootIcon,
 //   PeopleOutlineIcon,
@@ -11,7 +17,6 @@ import { faUserGroup,faRulerCombined, faCity, faHouseChimneyWindow, faPencil } f
 //   HouseIcon,
 //   EditTwoToneIcon,
 // } from "@material-ui/icons";
-
 
 function Services() {
   const map = [
@@ -44,9 +49,7 @@ function Services() {
       </div>
       <div className="info">
         <h5>{a.title1}</h5>
-        <p>
-        {a.title2}
-        </p>
+        <p>{a.title2}</p>
       </div>
     </div>
   ));

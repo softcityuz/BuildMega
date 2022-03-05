@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./HeaderNews/HeaderNews.module.css";
 // import img2 from "../../../assets/architecture1.jpg";
-import img2 from "../../assets/architecture1.jpg"
+import img2 from "../../assets/architecture1.jpg";
 
 const SingleNews = (props) => {
   return (

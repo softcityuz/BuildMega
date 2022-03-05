@@ -1,19 +1,19 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import logo from '../../assets/white_logo.png'
-import './Footer.scss'
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../../assets/white_logo.png";
+import "./Footer.scss";
 function Footer() {
-    const map = [
-      {id:1, to: "/", name: "Xizmatlar" },
-      {id:2, to: "/", name: "Tariximiz" },
-      {id:3, to: "/", name: "Loyihalar" },
-      {id:4, to: "news", name: "Yangiliklar" },
-    ];
-    const map2 = map.map((a) => (
-      <li key={a.id}>
-        <Link to={a.to}>{a.name}</Link>
-      </li>
-    ));
+  const map = [
+    { id: 1, to: "/", name: "Xizmatlar" },
+    { id: 2, to: "/", name: "Tariximiz" },
+    { id: 3, to: "/", name: "Loyihalar" },
+    { id: 4, to: "news", name: "Yangiliklar" },
+  ];
+  const map2 = map.map((a) => (
+    <li key={a.id}>
+      <Link to={a.to}>{a.name}</Link>
+    </li>
+  ));
   return (
     <div className="Footer">
       <div className="wrapper container">
@@ -52,4 +52,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;

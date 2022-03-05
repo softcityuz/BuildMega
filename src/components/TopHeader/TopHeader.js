@@ -22,7 +22,19 @@ function TopHeader() {
     localStorage.setItem("lang", event.target.value);
     i18n.changeLanguage(event.target.value);
   };
-
+  const map = [
+    { link: "/", id: 1, class: "facebook", icon: faFacebook },
+    { link: "/", id: 2, class: "tele", icon: faTelegramPlane },
+    { link: "/", id: 3, class: "insta", icon: faInstagram },
+    { link: "/", id: 4, class: "youtube", icon: faYoutube },
+  ];
+  const map2 = map.map((a) => (
+    <li key={a.id} className={a.class}>
+      <Link to={a.link}>
+        <FontAwesomeIcon icon={a.icon}></FontAwesomeIcon>{" "}
+      </Link>
+    </li>
+  ));
   return (
     <div className="TopHeader">
       <div className="container">
@@ -52,26 +64,7 @@ function TopHeader() {
                     </select>
                   </div>
                 </li>
-                <li className="facebook">
-                  <Link to="/">
-                    <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>{" "}
-                  </Link>
-                </li>
-                <li className="tele">
-                  <Link to="/">
-                    <FontAwesomeIcon icon={faTelegramPlane}></FontAwesomeIcon>{" "}
-                  </Link>
-                </li>
-                <li className="insta">
-                  <Link to="/">
-                    <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>{" "}
-                  </Link>
-                </li>
-                <li className="youtube">
-                  <Link to="/">
-                    <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>{" "}
-                  </Link>
-                </li>
+                {map2}
               </ul>
             </div>
           </div>

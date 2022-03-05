@@ -13,11 +13,11 @@ function Header() {
     { id: 4, name: t("navbar4"), url: "news" },
     { id: 5, name: t("navbar5"), url: "contact" },
   ];
-const HeaderMap = mapHeader.map((a) => (
-  <li key={a.id}>
-    <Link to={a.url}>{a.name}</Link>
-  </li>
-));
+  const HeaderMap = mapHeader.map((a) => (
+    <li key={a.id}>
+      <Link to={a.url}>{a.name}</Link>
+    </li>
+  ));
   return (
     <div className="Header">
       <div className="container">

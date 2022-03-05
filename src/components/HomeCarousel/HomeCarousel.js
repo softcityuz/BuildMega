@@ -24,7 +24,7 @@ function HomeCarousel() {
       class2: "slider3",
       title: "QURILISHLAR",
       title2: "Biz qurgan 10 ta binolarni qanday qurilganini koring",
-    }
+    },
   ];
   const map2 = map.map((a) => (
     <Carousel.Item key={a.id}>
@@ -40,9 +40,7 @@ function HomeCarousel() {
   ));
   return (
     <div className="HomeCarousel">
-      <Carousel fade>
-      {map2}
-      </Carousel>
+      <Carousel fade>{map2}</Carousel>
     </div>
   );
 }

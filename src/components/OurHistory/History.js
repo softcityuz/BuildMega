@@ -23,7 +23,7 @@ function History() {
             </div>
           </div>
           <div className="col-md-6">
-            <img src={img} alt="Image for Web"  />
+            <img src={img} alt="Image for Web" />
           </div>
         </div>
       </div>

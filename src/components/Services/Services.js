@@ -23,21 +23,19 @@ function Services() {
     {
       id: 1,
       icon: faRulerCombined,
-      title1: "PRE_CONSTRACTION SERVICES",
-      title2: ` Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy`,
+      title1: "Ofis binolarini rekonstruksiya qilish",
+      title2: `Biz siz uchun ofis va binolaringizni chiroyli dizaynga va mijozlarni lol qoldiruvchi darajada o'zgartirib beramiz!`,
     },
     {
       id: 2,
       icon: faUserGroup,
-      title1: "PRE_CONSTRACTION SERVICES",
-      title2: ` Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy`,
+      title1: "Binolarni kapital ta'mirlash",
+      title2: `Eski ko'rinishdan yangicha va o'ziga xos ko'rinishga o'tish kompaniya uchun mijozlar oqimini oshirish uchun katta yordam beradi.`,
     },
     {
       id: 3,
       icon: faHive,
-      title1: "PRE_CONSTRACTION SERVICES",
+      title1: "Demontaj va yig'ish",
       title2: ` Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy`,
     },

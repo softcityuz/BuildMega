@@ -39,7 +39,7 @@ function Header() {
                 <a href="/#services">{t("navbar2")}</a>
               </li>
               <li>
-                <a href="/#projects">{t("navbar3")}</a>
+                <a href="/project">{t("navbar3")}</a>
               </li>
             
               {HeaderMap}

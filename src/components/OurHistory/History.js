@@ -10,14 +10,11 @@ function History() {
             <div className="intro">
               <h3>BIZNING TARIX</h3>
               <h5>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+              "Building Mega Service" O'zbekiston qurilish bozorida yetakchi o'rinni egallaydi. Kompaniyamiz 2014 yilda tashkil etilgan.
               </h5>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+              Kompaniyaning asosiy yo'nalishi: har qanday murakkablikdagi inshootlarning ofis binolarini rekonstruksiya qilish, binolarni kapital ta'mirlash, ofislarni ta'mirlash, shuningdek, har qanday dizayndagi demontaj va yig'ish.
+Kompaniyamiz muhandislik tarmoqlarini o'rnatish, ya'ni 380 kVtgacha bo'lgan elektr montaj ishlari, sanitariya-tesisat ishlari, isitish, ventilyatsiya va konditsionerlarni o'rnatish ishlarini ham bajarishi mumkin.
               </p>
               <button>Ko'proq ko'rish</button>
             </div>

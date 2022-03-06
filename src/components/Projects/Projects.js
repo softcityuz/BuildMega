@@ -10,56 +10,56 @@ function Projects() {
       title1: "HEALTHCARE",
       title2: `Lorem ipsum dolor sit boshqa qismi esimda yo yana shu textdan 2
               qator futbol oynamimzami`,
-      url: "project",
+      url: "project/singilurproject",
     },
     {
       id: 2,
       title1: "HEALTHCARE",
       title2: `Lorem ipsum dolor sit boshqa qismi esimda yo yana shu textdan 2
               qator futbol oynamimzami`,
-      url: "project",
+      url: "project/singilurproject",
     },
     {
       id: 3,
       title1: "HEALTHCARE",
       title2: `Lorem ipsum dolor sit boshqa qismi esimda yo yana shu textdan 2
               qator futbol oynamimzami`,
-      url: "project",
+      url: "project/singilurproject",
     },
     {
       id: 4,
       title1: "HEALTHCARE",
       title2: `Lorem ipsum dolor sit boshqa qismi esimda yo yana shu textdan 2
               qator futbol oynamimzami`,
-      url: "project",
+      url: "project/singilurproject",
     },
     {
       id: 5,
       title1: "HEALTHCARE",
       title2: `Lorem ipsum dolor sit boshqa qismi esimda yo yana shu textdan 2
               qator futbol oynamimzami`,
-      url: "project",
+      url: "project/singilurproject",
     },
     {
       id: 6,
       title1: "HEALTHCARE",
       title2: `Lorem ipsum dolor sit boshqa qismi esimda yo yana shu textdan 2
               qator futbol oynamimzami`,
-      url: "project",
+      url: "project/singilurproject",
     },
     {
       id: 7,
       title1: "HEALTHCARE",
       title2: `Lorem ipsum dolor sit boshqa qismi esimda yo yana shu textdan 2
               qator futbol oynamimzami`,
-      url: "project",
+      url: "project/singilurproject",
     },
     {
       id: 8,
       title1: "HEALTHCARE",
       title2: `Lorem ipsum dolor sit boshqa qismi esimda yo yana shu textdan 2
               qator futbol oynamimzami`,
-      url: "project",
+      url: "project/singilurproject",
     },
   ];
   const map2 = map.map((a) => (

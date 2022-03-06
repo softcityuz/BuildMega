@@ -31,10 +31,18 @@ function RecentNews() {
       title2: `you should always have breakfast because breakfast is good for your health)`,
       link: "news",
     },
+    {
+      id: 4,
+      img: "salom",
+      title1: "Bke4 parts warehouse.DE",
+      date: "2022.04.03",
+      title2: `you should always have breakfast because breakfast is good for your health)`,
+      link: "news",
+    },
   ];
   const map2 = map.map((a) => (
     <div className="col-md-4" key={a.id}>
-      <Link to="news">
+      <Link to="singilur">
         <div className="top">
           <img src={img2} alt="Image" />
         </div>

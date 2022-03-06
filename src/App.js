@@ -66,7 +66,7 @@ const App = () => {
         </>
       ) : (
         <>
-              {/* <BackToTop /> */}
+              <BackToTop />
           <TopHeader />
           <Header />
           <Routes>

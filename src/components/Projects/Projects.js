@@ -80,7 +80,7 @@ function Projects() {
     </div>
   ));
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="wrapper">
       {map2}
       </div>

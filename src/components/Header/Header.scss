@@ -16,6 +16,9 @@
         }
       }
       .links {
+        @media all and (max-width:992px){
+          display: none;
+        }
         margin-top: 10px;
         margin-left: auto;
         a {

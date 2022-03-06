@@ -1,10 +1,11 @@
-import "./App.css";
 import React, { useEffect, useState } from "react";
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "./pages/HomePage";
 import { Routes, Route } from "react-router-dom";
 import TopHeader from "./components/TopHeader/TopHeader";
 import Header from "./components/Header/Header";
+import BurgerMenu from './components/BurgerMenu/BurgerMenu'
 import { Suspense } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Backdrop from "@material-ui/core/Backdrop";
@@ -71,6 +72,7 @@ const App = () => {
         <>
           <BackToTop />
           <TopHeader />
+          <BurgerMenu />
           <Header />
           <Routes>
             {mapRoute}

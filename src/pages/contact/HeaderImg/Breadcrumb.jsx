@@ -16,7 +16,7 @@ export const Breadcrumb = ({ pageNameForTitle, pageName }) => {
         data-aos-duration="500"
         className={moduleName.breadcrumb}
       >
-        <NavLink to={"*"}>Home page / </NavLink>
+        <NavLink to={"/"}>Home page / </NavLink>
         <h3> {pageName}</h3>
       </div>
     </>

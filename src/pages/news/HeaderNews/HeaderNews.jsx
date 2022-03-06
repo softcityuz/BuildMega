@@ -17,7 +17,7 @@ const MainNews = (props) => {
           <NavLink
             data-aos="fade-up"
             data-aos-duration="700"
-            to="*"
+            to="/"
             className={style.Block1}
           >
           Home 

@@ -19,7 +19,7 @@ function RecentNews() {
       img: img2,
       title1: '"Food City" da TRASTBANK qurilishi yakunlandi',
       date: "2022.04.03",
-      title2: `you should always have breakfast because breakfast is good for your health)`,
+      title2: `Yangi qurilayotgan yirik bozor hududida hamkorimiz Trastbankning yangi filiali qurib bitkazildi`,
       link: "news",
     },
     {
@@ -27,7 +27,7 @@ function RecentNews() {
       img: img3,
       title1: "60-sonli oilaviy poliklinika foydalanishga topshirildi.",
       date: "2022.04.03",
-      title2: `you should always have breakfast because breakfast is good for your health)`,
+      title2: `Oilaviy poliklinika to'liq montaj ishlari bitdi va yangi qismlari quirilish ishlari davom ettirilmoqda`,
       link: "news",
     }
   ];

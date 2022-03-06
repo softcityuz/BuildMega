@@ -49,7 +49,7 @@ function TopHeader() {
             </div>
             <div className="call_me">
               <a href="tel: +998 99 969 00 70">
-                <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> Phones : +998
+                <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> Phones : 
                 +998 99 969 00 70
               </a>
             </div>

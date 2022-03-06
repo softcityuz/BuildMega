@@ -2,6 +2,7 @@ import React from "react";
 import "./Services.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHive } from "@fortawesome/free-brands-svg-icons";
+import {useTranslation} from 'react-i18next'
 import {
   faUserGroup,
   faRulerCombined,
@@ -9,35 +10,27 @@ import {
   faHouseChimneyWindow,
   faPencil,
 } from "@fortawesome/free-solid-svg-icons";
-// import {
-//   SqueareFootIcon,
-//   PeopleOutlineIcon,
-//   ViewQuiltIcon,
-//   ApartmentIcon,
-//   HouseIcon,
-//   EditTwoToneIcon,
-// } from "@material-ui/icons";
 
 function Services() {
+  const {t} = useTranslation()
   const map = [
     {
       id: 1,
       icon: faRulerCombined,
-      title1: "Ofis binolarini rekonstruksiya qilish",
-      title2: `Biz siz uchun ofis va binolaringizni chiroyli dizaynga va mijozlarni lol qoldiruvchi darajada o'zgartirib beramiz!`,
+      title1: t("ourServices.title1"),
+      title2: t("ourServices.subTitle1"),
     },
     {
       id: 2,
       icon: faUserGroup,
-      title1: "Binolarni kapital ta'mirlash",
-      title2: `Eski ko'rinishdan yangicha va o'ziga xos ko'rinishga o'tish kompaniya uchun mijozlar oqimini oshirish uchun katta yordam beradi.`,
+      title1: t("ourServices.title2"),
+      title2: t("ourServices.subTitle2"),
     },
     {
       id: 3,
       icon: faHive,
-      title1: "Demontaj va yig'ish",
-      title2: ` Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy`,
+      title1: t("ourServices.title3"),
+      title2: t("ourServices.subTitle3"),
     },
   ];
   const map2 = map.map((a) => (
@@ -56,7 +49,7 @@ function Services() {
     <div className="Services" id="services">
       <div className="container">
         <div className="intro">
-          <h2>Bizning ximatlar</h2>
+          <h2>{t("ourServices.intro")}</h2>
         </div>
         <div className="row">{map2}</div>
         <div className="row the_second">

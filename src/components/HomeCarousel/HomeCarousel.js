@@ -1,30 +1,32 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from 'react-router-dom'
+import {useTranslation} from 'react-i18next'
 import "./HomeCarousel.scss";
 
 function HomeCarousel() {
+  const {t} = useTranslation()
   const map = [
     {
       id: 1,
       clas1: "for_backline1",
       class2: "slider1",
-      title: "QURILISHLAR",
-      title2: "BIZ QURGAN BINOLARNI LOYIHALAR BO'LIMIDA KO'RING",
+      title: t("homeCarousel.title1"),
+      title2: t("homeCarousel.subTitle1"),
     },
     {
       id: 2,
       clas1: "for_backline2",
       class2: "slider2",
-      title: "SIFAT VA TEZLIK",
-      title2: "BIZ SIZGA SIFATLI XIZMATLAR TAKLIF QILAMIZ",
+      title: t("homeCarousel.title2"),
+      title2: t("homeCarousel.subTitle2"),
     },
     {
       id: 3,
       clas1: "for_backline3",
       class2: "slider3",
-      title: "SHINAM VA ZAMONAVIY",
-      title2: "BIZNING LOYIHALARNI KO'RING VA BAHO BERING",
+      title: t("homeCarousel.title3"),
+      title2: t("homeCarousel.subTitle3"),
     },
   ];
   const map2 = map.map((a) => (

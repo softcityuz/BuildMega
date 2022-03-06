@@ -3,5 +3,48 @@
   "navbar2": "Xizmatlar",
   "navbar3": "Loyihalar",
   "navbar4": "Blog",
-  "navbar5": "Aloqa"
+  "navbar5": "Aloqa",
+  "seeMore": "Ko'proq Ko'rish",
+  "homeCarousel": {
+    "title1": "QURILISHLAR",
+    "title2": "SIFAT VA TEZLIK",
+    "title3": "SHINAM VA ZAMONAVIY",
+    "subTitle1": "BIZ QURGAN BINOLARNI LOYIHALAR BO'LIMIDA KO'RING",
+    "subTitle2": "BIZ SIZGA SIFATLI XIZMATLAR TAKLIF QILAMIZ",
+    "subTitle3": "BIZNING LOYIHALARNI KO'RING VA BAHO BERING"
+  },
+  "ourServices": {
+    "intro": "Bizning ximatlar",
+    "title1": "Ofis binolarini rekonstruksiya qilish",
+    "title2": "Binolarni kapital ta'mirlash",
+    "title3": "Demontaj va yig'ish",
+    "subTitle1": "Biz siz uchun ofis va binolaringizni chiroyli dizaynga va mijozlarni lol qoldiruvchi darajada o'zgartirib beramiz!",
+    "subTitle2": "Eski ko'rinishdan yangicha va o'ziga xos ko'rinishga o'tish kompaniya uchun mijozlar oqimini oshirish uchun katta yordam beradi.",
+    "subTitle3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+  },
+  "ourHistory": {
+    "intro": "BIZNING TARIX",
+    "title1": "Building Mega Service kompaniyasi O'zbekiston qurilish bozorida yetakchi o'rinni egallaydi. Kompaniyamiz 2014 yilda tashkil etilgan.",
+    "subTitle1": "Kompaniyaning asosiy yo'nalishi: har qanday murakkablikdagi inshootlarning ofis binolarini rekonstruksiya qilish, binolarni kapital ta'mirlash, ofislarni ta'mirlash, shuningdek, har qanday dizayndagi demontaj va yig'ish. Kompaniyamiz muhandislik tarmoqlarini o'rnatish, ya'ni 380 kVtgacha bo'lgan elektr montaj ishlari, sanitariya-tesisat ishlari, isitish, ventilyatsiya va konditsionerlarni o'rnatish ishlarini ham bajarishi mumkin."
+  },
+  "homeProjects":{
+    "seeProject": "Loyihani ko'rish",
+    "title1": "TRASTBANK",
+    "subTitle1": "Bu obyekt Bektemir tumani FOOD City xududida bank binosi",
+    "title2": "ProCab kompaniyasi",
+    "subTitle2": "ProCab firmsi bilan ancha yillardan beri hamkorlik qilib kelmmoqdamiz",
+    "title3": "ProCab kompaniyasi",
+    "subTitle3": "ProCab firmsi bilan ancha yillardan beri hamkorlik qilib kelmmoqdamiz",
+    "title4": "Oilaviy Polilinika",
+    "subTitle5": "60-sonli oilaviy poliklinika qurilishi o'z nihoyasiga yetib foydalanishga topshirildi!"
+  },
+  "homeNews":{
+    "title1": "250-sonli bog'chani tamirlash ishlari yakunlandi.",
+    "subTitle1": "Qurilish ishlari o'z vaqtida yakunlandi va foydalaishga topshirildi.Kompniya tomonidan qoshimcha favvora ham qurib berildi.",
+    "title2": "Food City da TRASTBANK qurilishi yakunlandi",
+    "subTitle2": "Yangi qurilayotgan yirik bozor hududida hamkorimiz Trastbankning yangi filiali qurib bitkazildi",
+    "title3": "60-sonli oilaviy poliklinika foydalanishga topshirildi.",
+    "subTitle3": "Oilaviy poliklinika to'liq montaj ishlari bitdi va yangi qismlari quirilish ishlari davom ettirilmoqda"
+  }
+
 }

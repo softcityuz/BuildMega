@@ -22,22 +22,21 @@ function Footer() {
             <img src={logo} alt="rasm bor edi!" />
           </a>
           <p>
-            Qanaqadir shior yoki uwanga uxwagan narsa yozildi i u uzzzuuu
-            bolishi kerekan
+          "Building Mega Service" O'zbekiston qurilish bozorida yetakchi o'rinni egallaydi. Kompaniyamiz 2014 yilda tashkil etilgan.
           </p>
         </div>
         <div className="right_box">
           <div className="navigation">
-            <h4>Tezkor havolalar</h4>
+            <h6>Tezkor havolalar</h6>
             <ul>{map2}</ul>
           </div>
           <div className="contacts">
-            <h4>Aloqa</h4>
+            <h6>Aloqa</h6>
             <p>
-              Adress: <span>Yunusobod 14-daha,Toshkent</span>
+              Adress: <span>Yashnobod, Parkent kochasi 74 uy</span>
             </p>
             <p>
-              Phones: <a href="tel: +998 90 806 2004">+998 90 806 20 04</a>
+              Phones: <a href="tel: +998 99 969 00 70">+998 99 969 00 70</a>
             </p>
             <p>
               Email: <span>info@gmail.com</span>

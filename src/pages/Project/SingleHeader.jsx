@@ -18,7 +18,7 @@ export function SingleHeader() {
           to="/"
           className={style.Block1}
         >
-          Home
+          Bosh sahifa
         </NavLink>
         <a
           data-aos="fade-up"

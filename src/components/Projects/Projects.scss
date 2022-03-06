@@ -1,5 +1,8 @@
 .projects {
   .wrapper {
+    @media all and (max-width:992px){
+      display: block;
+    }
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     .each_part {

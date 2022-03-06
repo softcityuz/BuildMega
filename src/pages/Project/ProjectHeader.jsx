@@ -11,7 +11,7 @@ const ProjectHeader = (props) => {
 
         <div className={style.BlockLink}>
           <h1 data-aos="fade-up" data-aos-duration="1000">
-            Projects
+            Loyihalar
           </h1>
           <NavLink
             data-aos="fade-up"
@@ -19,7 +19,7 @@ const ProjectHeader = (props) => {
             to="*"
             className={style.Block1}
           >
-            Home
+            Bosh sahifa
           </NavLink>
           <a
             data-aos="fade-up"
@@ -27,7 +27,7 @@ const ProjectHeader = (props) => {
             href="*"
             className={style.Block2}
           >
-              / Project{" "}
+              / Loyihalar{" "}
           </a>
         </div>
       </div>

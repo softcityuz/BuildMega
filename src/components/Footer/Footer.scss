@@ -3,14 +3,31 @@
   background-color: rgb(47, 47, 47);
   .wrapper {
     display: flex;
+    @media all and (max-width:992px){
+      .left_box{
+        display: block !important;
+        p{
+          margin-left: 0 !important;
+          max-width: 250px !important;
+        }
+      }
+      .right_box{
+        display: block !important;
+        .navigation{
+          margin-right: 0 !important;
+        }
+      }
+    }
     .left_box {
+      display: flex;
       img {
         width: 100px;
       }
       p {
-        max-width: 150px;
+        max-width: 300px;
         color: #fff;
         margin: 10px 0;
+        margin-left: 20px;
       }
     }
     .right_box {
@@ -18,7 +35,7 @@
       display: flex;
       .navigation {
         margin-right: 20px;
-        h4 {
+        h6 {
           color: #fff;
         }
         ul {

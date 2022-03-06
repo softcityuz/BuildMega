@@ -4,6 +4,9 @@
   .container {
     position: relative;
     .smth {
+      @media all and (max-width:992px){
+        width: auto;
+      }
       z-index: 9999;
       position: absolute;
       display: flex;
@@ -12,6 +15,7 @@
       width: 100%;
       .logo {
         img {
+          z-index: 9000;
           width: 80px;
         }
       }

@@ -16,15 +16,15 @@ function HomeCarousel() {
       id: 2,
       clas1: "for_backline2",
       class2: "slider2",
-      title: "QURILISHLAR",
-      title2: "Biz qurgan 10 ta binolarni qanday qurilganini koring",
+      title: "SIFAT VA TEZLIK",
+      title2: "BIZ SIZGA SIFATLI XIZMATLAR TAKLIF QILAMIZ",
     },
     {
       id: 3,
       clas1: "for_backline3",
       class2: "slider3",
-      title: "QURILISHLAR",
-      title2: "Biz qurgan 10 ta binolarni qanday qurilganini koring",
+      title: "SHINAM VA ZAMONAVIY",
+      title2: "BIZNING LOYIHALARNI KO'RING VA BAHO BERING",
     },
   ];
   const map2 = map.map((a) => (

@@ -44,13 +44,13 @@ function TopHeader() {
             <div className="adress">
               <p>
                 <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>{" "}
-                Tashkent, Yunusobod 7885
+                Yashnobod, Parkent kochasi 74 uy
               </p>
             </div>
             <div className="call_me">
-              <a href="tel: +998 90 806 20 04">
-                <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> Phones : +998
-                90 806 20 04
+              <a href="tel: +998 99 969 00 70">
+                <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> Phones : 
+                +998 99 969 00 70
               </a>
             </div>
           </div>

@@ -174,15 +174,7 @@
   margin-top: 2rem;
   margin-bottom: 0.1rem;
 }
-.Katalog h1::after {
-  content: "";
-  border-top: 4px solid #4178c0;
-  width: 100%;
-  position: absolute;
-  display: block;
-  transform: rotateY(90deg);
-  transition: transform 0.25s linear;
-}
+
 .Katalog h1:hover {
   transform: scale(1);
 }

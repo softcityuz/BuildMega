@@ -4,15 +4,18 @@ import img from "../../../assets/1.jpg"
 import img2 from "../../../assets/architecture1.jpg";
 import "./MainNewsCopy.css";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 <link
   href="https://fonts.googleapis.com/css?family=Raleway:400,800,300"
   rel="stylesheet"
   type="text/css"
 ></link>;
  const NewsPage = (props) => {
+         const { t } = useTranslation();
+
           const map23 = [
-            { id: 1, photoUrl: img, title_uz: "robiya yangiligi" },
-            { id: 2, photoUrl: img2, title_uz: "robiya yangiligi2" },
+            { id: 1, photoUrl: img, title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") },
+            { id: 2, photoUrl: img2,title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") } 
           ];
   const map2 = map23.map((a, index) => (
     <div
@@ -27,8 +30,8 @@ import { NavLink } from "react-router-dom";
             <img src={a.photoUrl} alt="bu yerda rasm bor edi!" />
             <figcaption>
               <NavLink to={"/singilur"}> </NavLink>
-              <h2>Yangilik</h2>
-              <p>Bizda doim 1 o`qing</p>
+              <h2> {a.title_uz}</h2>
+              <p> {a.title_2}</p>
             </figcaption>
           </figure>
         </div>
@@ -39,9 +42,8 @@ import { NavLink } from "react-router-dom";
     <div>
       <div className={style.Katalog}>
         <div style={{ width: "100%" }}>
-          {" "}
-         
-          <h1>News</h1>
+          {""}
+          <h1> {t("yangilipage_r")}</h1>
         </div>
         {map2}
       </div>

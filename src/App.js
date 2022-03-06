@@ -9,6 +9,7 @@ import { Suspense } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Backdrop from "@material-ui/core/Backdrop";
 import Footer from "./components/Footer/Footer";
+import { BackToTop } from "./BackToTop.js";
 import CircularProgress from "@material-ui/core/CircularProgress";
 const MainProject = React.lazy(() => import("./pages/Project/MainProject"));
 const SingleNews = React.lazy(() => import("./pages/news/SingleNews"));
@@ -65,6 +66,7 @@ const App = () => {
         </>
       ) : (
         <>
+              <BackToTop />
           <TopHeader />
           <Header />
           <Routes>

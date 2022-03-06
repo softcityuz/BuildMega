@@ -36,7 +36,7 @@ function HomeCarousel() {
           <div className="sometext">
             <h1>{a.title}</h1>
             <h4>{a.title2}</h4>
-            <Link className="to_other_page" to="/project">Ko'proq ko'rish</Link>
+            <Link className="to_other_page" to="/project">{t("seeMore")}</Link>
           </div>
         </div>
       </div>

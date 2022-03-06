@@ -1,22 +1,23 @@
 import React from "react";
 import img from "../../assets/1.jpg";
+import {useTranslation} from 'react-i18next'
 import "./History.scss";
 function History() {
+  const {t} = useTranslation()
   return (
     <div className="History" id="about">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
             <div className="intro">
-              <h3>BIZNING TARIX</h3>
+              <h3>{t('ourHistory.intro')}</h3>
               <h5>
-              "Building Mega Service" O'zbekiston qurilish bozorida yetakchi o'rinni egallaydi. Kompaniyamiz 2014 yilda tashkil etilgan.
+              {t('ourHistory.title1')}
               </h5>
               <p>
-              Kompaniyaning asosiy yo'nalishi: har qanday murakkablikdagi inshootlarning ofis binolarini rekonstruksiya qilish, binolarni kapital ta'mirlash, ofislarni ta'mirlash, shuningdek, har qanday dizayndagi demontaj va yig'ish.
-Kompaniyamiz muhandislik tarmoqlarini o'rnatish, ya'ni 380 kVtgacha bo'lgan elektr montaj ishlari, sanitariya-tesisat ishlari, isitish, ventilyatsiya va konditsionerlarni o'rnatish ishlarini ham bajarishi mumkin.
+              {t('ourHistory.subTitle1')}
               </p>
-              <button>Ko'proq ko'rish</button>
+              <button>{t("seeMore")}</button>
             </div>
           </div>
           <div className="col-md-6">

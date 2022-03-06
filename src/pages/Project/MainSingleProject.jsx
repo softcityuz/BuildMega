@@ -1,14 +1,17 @@
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
-import img1 from "../../assets/architecture4.jpg";
-import img2 from "../../assets/architecture3.jpg";
-import img3 from "../../assets/architecture5.jpg";
-import img4 from "../../assets/architecture6.jpg";
+import img1 from "../../assets/projects/trastbank1.jpg";
+import img2 from "../../assets/projects/trastbank2.jpg";
+import img3 from "../../assets/projects/trastbank3.jpg";
+import img4 from "../../assets/projects/trastbank4.jpg";
+
 import style from "./MainSingleProject.module.css";
+import {useTranslation} from 'react-i18next'
 export const MainSingleProject = () => {
+  const {t} = useTranslation()
   return (
     <div className={style.lavhalar}>
-      <h1>Loyihalarimiz</h1>
+      <h1>{t('innerProject.intro')}</h1>
       <div className={style.lavhalar1}>
         <SRLWrapper>
           <div>

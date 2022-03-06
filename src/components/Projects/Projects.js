@@ -1,32 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import {useTranslation} from 'react-i18next'
 import "./Projects.scss";
+import { use } from "i18next";
 
 function Projects() {
+  const {t} = useTranslation();
   const map = [
     {
       id: 1,
-      title1: "TRASTBANK",
-      title2: `Bu obyekt Bektemir tumani FOOD City xududida bank binosi`,
+      title1:t("homeProjects.title1"),
+      title2: t("homeProjects.subTitle1"),
       url: "project/singilurproject",
     },
     {
       id: 2,
-      title1: "ProCab kompaniyasi",
-      title2: `ProCab firmsi bilan ancha yillardan beri hamkorlik qilib kelmmoqdamiz`,
+      title1:t("homeProjects.title2"),
+      title2: t("homeProjects.subTitle2"),
       url: "project/singilurproject",
     },
     {
       id: 3,
-      title1: "Oilaviy Polilinika",
-      title2: `60-sonli oilaviy poliklinika qurilishi o'z nihoyasiga yetib foydalanishga topshirildi!`,
+      title1:t("homeProjects.title3"),
+      title2: t("homeProjects.subTitle3"),
       url: "project/singilurproject",
     },
     {
       id: 4,
-      title1: "Toshkent shahar xokimyati",
-      title2: `Toshkent shahar xokimyati biz bilan moliyaviy huquqiy masalalarda o'z amaliy yordamini ko'rsatib kelmoqda!`,
+      title1:t("homeProjects.title4"),
+      title2: t("homeProjects.subTitle4"),
       url: "project/singilurproject",
     },
     {
@@ -66,7 +68,7 @@ function Projects() {
             <p>
              {a.title2}
             </p>
-            <Link to={a.url}>LOYIHANI KO'RISH</Link>
+            <Link to={a.url}>{t("homeProjects.seeProject")}</Link>
           </div>
         </div>
       </Link>

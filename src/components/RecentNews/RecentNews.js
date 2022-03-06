@@ -1,33 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {useTranslation} from 'react-i18next'
 import "./RecentNews.scss";
 import img1 from "../../assets/projects/bogcha2.jpg";
 import img2 from "../../assets/projects/trastbank1.jpg";
 import img3 from "../../assets/projects/poliklinika1.jpg";
 function RecentNews() {
+  const {t} = useTranslation()
   const map = [
     {
       id: 1,
       img: img1,
-      title1: "250-sonli bog'chani tamirlash ishlari yakunlandi.",
+      title1: t("homeNews.title1"),
       date: "2022.04.03",
-      title2: `Qurilish ishlari o'z vaqtida yakunlandi va foydalaishga topshirildi.Kompniya tomonidan qoshimcha favvora ham qurib berildi.`,
+      title2: t("homeNews.subTitle1"),
       link: "news",
     },
     {
       id: 2,
       img: img2,
-      title1: '"Food City" da TRASTBANK qurilishi yakunlandi',
+      title1: t("homeNews.title2"),
       date: "2022.04.03",
-      title2: `Yangi qurilayotgan yirik bozor hududida hamkorimiz Trastbankning yangi filiali qurib bitkazildi`,
+      title2: t("homeNews.subTitle2"),
       link: "news",
     },
     {
       id: 3,
       img: img3,
-      title1: "60-sonli oilaviy poliklinika foydalanishga topshirildi.",
+      title1: t("homeNews.title3"),
       date: "2022.04.03",
-      title2: `Oilaviy poliklinika to'liq montaj ishlari bitdi va yangi qismlari quirilish ishlari davom ettirilmoqda`,
+      title2: t("homeNews.subTitle3"),
       link: "news",
     }
   ];
@@ -49,7 +51,7 @@ function RecentNews() {
     <div className="RecentNews">
       <div className="container">
         <div className="intro">
-          <h2>So'ngi yangiliklar</h2>
+          <h2>{t("homeNews.intro")}</h2>
         </div>
         <div className="row">{map2}</div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import {useTranslation} from 'react-i18next'
 const Ul = styled.ul`
   display: none;
   list-style: none;
@@ -8,6 +8,10 @@ const Ul = styled.ul`
   z-index: 100;
   li {
     padding: 18px 10px;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
   }
   @media (max-width: 992px) {
     flex-flow: column nowrap;
@@ -28,13 +32,15 @@ const Ul = styled.ul`
 `;
 
 const RightNav = ({ open }) => {
+  const {t} = useTranslation()
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact Us</li>
-      <li>Sign In</li>
-      <li>Sign Up</li>
+      <li><a href="#about">{t("navbar1")}</a></li>
+      <li><a href="#services">{t("navbar2")}</a></li>
+      <li><a href="/project">{t("navbar3")}</a></li>
+      <li><a href="/news">{t("navbar4")}</a></li>
+      <li><a href="/contact">{t("navbar5")}</a></li>
+      
     </Ul>
   )
 }

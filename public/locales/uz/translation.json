@@ -32,13 +32,14 @@
     "title1": "TRASTBANK",
     "subTitle1": "Bu obyekt Bektemir tumani FOOD City xududida bank binosi",
     "title2": "ProCab kompaniyasi",
-    "subTitle2": "ProCab firmsi bilan ancha yillardan beri hamkorlik qilib kelmmoqdamiz",
-    "title3": "ProCab kompaniyasi",
-    "subTitle3": "ProCab firmsi bilan ancha yillardan beri hamkorlik qilib kelmmoqdamiz",
-    "title4": "Oilaviy Polilinika",
+    "subTitle2": "ProCab kompaniyasi bilan ancha yillardan beri hamkorlik qilib kelmmoqdamiz",
+    "title3": "Oilaviy Poliklinka",
+    "subTitle3": "60-sonli oilaviy poliklinika qurilishi o'z nihoyasiga yetib foydalanishga topshirildi!",
+    "title4": "Toshkent shahar xokimligi",
     "subTitle5": "60-sonli oilaviy poliklinika qurilishi o'z nihoyasiga yetib foydalanishga topshirildi!"
   },
   "homeNews":{
+    "intro":"So'ngi Yangiliklar",
     "title1": "250-sonli bog'chani tamirlash ishlari yakunlandi.",
     "subTitle1": "Qurilish ishlari o'z vaqtida yakunlandi va foydalaishga topshirildi.Kompniya tomonidan qoshimcha favvora ham qurib berildi.",
     "title2": "Food City da TRASTBANK qurilishi yakunlandi",
@@ -46,15 +47,31 @@
     "title3": "60-sonli oilaviy poliklinika foydalanishga topshirildi.",
     "subTitle3": "Oilaviy poliklinika to'liq montaj ishlari bitdi va yangi qismlari quirilish ishlari davom ettirilmoqda"
   },
+  "footer": {
+    "motto": "Building Mega Service kompaniyasi O'zbekiston qurilish bozorida yetakchi o'rinni egallaydi. Kompaniyamiz 2014 yilda tashkil etilgan.",
+    "adress": "Adress: Yashnobod, Parkent kochasi 74 uy",
+    "tell": "Raqam :",
+    "email": "Email :",
+    "workTime": "Ish vaqti :",
+    "quickLinks": "Tezkor havolalar"
+  },
+  "innerNews": {
+    "title1": "250-bog'cha qurilish ishlari yakunlandi!",
+    "subTitle1": "Xalq ta’limi vazirligi huzuridagi «Xalq ta’limi sohasida loyiha hujjatlariga teхnik topshiriqlarni ishlab chiqish va qurilish ob’yektlari sifatini monitoring qilish boʻyicha injiniring kompaniyasi» tomonidan mazkur yoʻnalishda bajarilgan ishlarning sifat nazorati va yakuniy nazorat olib boriladi. Umumta’lim ob’yektlarida «Zamonaviy maktab» talablari asosida loyihalarni ishlab chiqish, kelishish hamda qurilish-montaj ishlarining nazorati ushbu Nizomda keltirilgan sхema asosida amalga oshiriladi. Ushbu Nizom qoidalari moliyalashtirish manbaidan qat’i nazar yangidan quriladigan, rekonstruksiya qilinadigan va mukammal ta’mirlanadigan barcha davlat umumta’lim ob’yektlarida amalga oshiriladigan loyihalash va qurilish-montaj ishlari uchun majburiydir. Umumta’lim ob’yektlarini yangidan qurish, rekonstruksiya qilish va mukammal ta’mirlash jarayonida qurilish-montaj ishlarining sifat nazorati quyidagi asosiy tamoyillar asosida amalga oshiriladi: sifat nazoratini amalga oshirishning хolisligi va oshkoraligi; yuridik va jismoniy shaхslarning huquqlari hamda qonuniy manfaatlariga daхl qilmaslik; хoʻjalik yurituvchi sub’yektlarning moliyaviy-хoʻjalik faoliyatiga aralashmaslik."
+  },
+  "innerProject": {
+    "intro": "1994 yilda tashkil etilgan «Trastbank» aksiyadorlik birja banki O‘zbekiston Respublikasidagi eng etakchi banklaridan biri bo‘lib u o'z mijozlariga barcha turdagi keng ko‘lamli bank mahsulotlari va xizmatlarini ko‘rsatib kelmoqda. Bank tarixi mustaqillik yillarida respublikamiz bank sektorining muntazam rivojlanish sur’atlarini aks ettiradi.",
+    "project": "Loyiha"
+  },
   "loyihalar":"Loyihalar",
   "homapage_r":"Bosh sahifa",
   "ourproject":"Bizning loyihalar",
   "transbank_r":"Bu obyekt Bektemir tumani FOOD City xududida bank binosi",
   "transbanktitle_r":"TRASTBANK",
   "poliknika_r":"Oilaviy Polilinika",
-  "poliknikaraqami_r":"6,0-sonli oilaviy poliklinika qurilishi o'z nihoyasiga yetib foydalanishga topshirildi!",
+  "poliknikaraqami_r":"60-sonli oilaviy poliklinika qurilishi o'z nihoyasiga yetib foydalanishga topshirildi!",
   "transbankfiliali_r":"TRASTBANK Samarqand filiali",
-  "filialhaqida_r":"O,byetkt qurilish ishlari sifatli tarzda bank xavfsizlik tomonlarini o'ylagan holda puxta qilib qurilgan !",
+  "filialhaqida_r":"Obyetkt qurilish ishlari sifatli tarzda bank xavfsizlik tomonlarini o'ylagan holda puxta qilib qurilgan !",
   "yangilipage_r":"Yangilik",
   "contact_r":"Aloqa"
 

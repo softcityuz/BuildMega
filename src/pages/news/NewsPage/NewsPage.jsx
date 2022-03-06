@@ -15,7 +15,8 @@ import { useTranslation } from 'react-i18next';
 
           const map23 = [
             { id: 1, photoUrl: img, title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") },
-            { id: 2, photoUrl: img2,title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") } 
+            { id: 2, photoUrl: img2,title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") },
+            { id: 3, photoUrl: img2,title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") }
           ];
   const map2 = map23.map((a, index) => (
     <div

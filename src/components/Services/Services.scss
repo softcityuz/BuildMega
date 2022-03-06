@@ -19,6 +19,11 @@
   }
   .row {
     margin: 20px 0;
+    @media all and (max-width:992px){
+      .col-md-4{
+          grid-template-columns: 35% 65% !important;
+      }
+    }
     .col-md-4 {
       &:nth-child(1) {
         &:hover {

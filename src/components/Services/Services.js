@@ -54,7 +54,7 @@ function Services() {
     </div>
   ));
   return (
-    <div className="Services">
+    <div className="Services" id="services">
       <div className="container">
         <div className="intro">
           <h2>Bizning ximatlar</h2>

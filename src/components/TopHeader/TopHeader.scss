@@ -1,4 +1,7 @@
 .TopHeader{
+    @media all and (max-width:992px){
+        display: none;
+    }
     background: linear-gradient(black, rgba(0, 0, 0, 0.87));
     backdrop-filter: blur(10px);
     height: 70px;

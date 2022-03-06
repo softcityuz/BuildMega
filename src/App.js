@@ -9,12 +9,12 @@ import BurgerMenu from './components/BurgerMenu/BurgerMenu'
 import { Suspense } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Backdrop from "@material-ui/core/Backdrop";
-import { SingleProject } from "./pages/Project/SingleProject";
 import Footer from "./components/Footer/Footer";
 import { BackToTop } from "./BackToTop.js";
 import CircularProgress from "@material-ui/core/CircularProgress";
 const MainProject = React.lazy(() => import("./pages/Project/MainProject"));
 const SingleNews = React.lazy(() => import("./pages/news/SingleNews"));
+const SingleProject = React.lazy(() => import("./pages/Project/SingleProject"));
 const News = React.lazy(() => import("./pages/news/News"));
 const Contact = React.lazy(() => import("./pages/contact/Contact"));
 const useStyles = makeStyles((theme) => ({

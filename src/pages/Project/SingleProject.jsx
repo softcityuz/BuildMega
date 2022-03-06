@@ -1,10 +1,13 @@
 import React from "react";
-import img from "../../assets/slider2.jpg";
-import style from "./SingleProject.module.css"
-export const SingleProject = () => {
+import { SingleHeader } from "./SingleHeader";
+import { MainSingleProject } from "./MainSingleProject";
+// import MobileNav1 from "./../mobilnav/MobileNav1";
+const SingleProject = (props) => {
   return (
-    <div>
-      <img className={style.Block} src={img} alt="bu yyerda rasm bor edi!" />
-    </div>
+    <>
+      <SingleHeader />
+      <MainSingleProject />
+    </>
   );
 };
+export default SingleProject;

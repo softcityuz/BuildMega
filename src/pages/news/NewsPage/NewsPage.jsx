@@ -11,8 +11,8 @@ import { NavLink } from "react-router-dom";
 ></link>;
  const NewsPage = (props) => {
           const map23 = [
-            { id: 1, photoUrl: img, title_uz: "robiya yangiligi" },
-            { id: 2, photoUrl: img2, title_uz: "robiya yangiligi2" },
+            { id: 1, photoUrl: img, title: "robiya yangiligi" },
+            { id: 2, photoUrl: img2, title: "robiya yangiligi2" },
           ];
   const map2 = map23.map((a, index) => (
     <div

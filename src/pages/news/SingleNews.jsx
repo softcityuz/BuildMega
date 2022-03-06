@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./HeaderNews/HeaderNews.module.css";
-// import img2 from "../../../assets/architecture1.jpg";
-import img2 from "../../assets/architecture1.jpg";
+import img2 from "../../assets/news.jpg";
 
 const SingleNews = (props) => {
   return (
@@ -11,7 +10,7 @@ const SingleNews = (props) => {
         style={{ backgroundImage: `url(${img2})` }}
       >
         <h1 data-aos="fade-up" data-aos-duration="1000">
-          yangilik eng so`ngi
+          Eng so'ngi yangiliklar
         </h1>
       </div>
       <div
@@ -25,40 +24,17 @@ const SingleNews = (props) => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Biz bilan qolng !
+            250-bog'cha qurilish ishlari yakunlandi!
           </h1>
           <h1 className={style.description4}>
-            "On the other hand, we denounce with righteous indignation and
-            dislike men who are so beguiled and demoralized by the charms of
-            pleasure of the moment, so blinded by desire, that they cannot
-            foresee the pain and trouble that are bound to ensue; and equal
-            blame belongs to those who fail in their duty through weakness of
-            will, which is the same as saying through shrinking from toil and
-            pain. These cases are perfectly simple and easy to distinguish. In a
-            free hour, when our power of choice is untrammelled and when nothing
-            prevents our being able to do what we like best, every pleasure is
-            to be welcomed and every pain avoided. But in certain circumstances
-            and owing to the claims of duty or the obligations of business it
-            will frequently occur that pleasures have to be repudiated and
-            annoyances accepted. The wise man therefore always holds in these
-            matters to this principle of selection: he rejects pleasures to
-            secure other greater pleasures, or else he endures pains to avoid
-            worse pains." "On the other hand, we denounce with righteous
-            indignation and dislike men who are so beguiled and demoralized by
-            the charms of pleasure of the moment, so blinded by desire, that
-            they cannot foresee the pain and trouble that are bound to ensue;
-            and equal blame belongs to those who fail in their duty through
-            weakness of will, which is the same as saying through shrinking from
-            toil and pain. These cases are perfectly simple and easy to
-            distinguish. In a free hour, when our power of choice is
-            untrammelled and when nothing prevents our being able to do what we
-            like best, every pleasure is to be welcomed and every pain avoided.
-            But in certain circumstances and owing to the claims of duty or the
-            obligations of business it will frequently occur that pleasures have
-            to be repudiated and annoyances accepted. The wise man therefore
-            always holds in these matters to this principle of selection: he
-            rejects pleasures to secure other greater pleasures, or else he
-            endures pains to avoid worse pains."
+          Xalq ta’limi vazirligi huzuridagi «Xalq ta’limi sohasida loyiha hujjatlariga teхnik topshiriqlarni ishlab chiqish va qurilish ob’yektlari sifatini monitoring qilish boʻyicha injiniring kompaniyasi» tomonidan mazkur yoʻnalishda bajarilgan ishlarning sifat nazorati va yakuniy nazorat olib boriladi.
+            Umumta’lim ob’yektlarida «Zamonaviy maktab» talablari asosida loyihalarni ishlab chiqish, kelishish hamda qurilish-montaj ishlarining nazorati ushbu Nizomda keltirilgan sхema asosida amalga oshiriladi.
+            Ushbu Nizom qoidalari moliyalashtirish manbaidan qat’i nazar yangidan quriladigan, rekonstruksiya qilinadigan va mukammal ta’mirlanadigan barcha davlat umumta’lim ob’yektlarida amalga oshiriladigan loyihalash va qurilish-montaj ishlari uchun majburiydir.
+            Umumta’lim ob’yektlarini yangidan qurish, rekonstruksiya qilish va mukammal ta’mirlash jarayonida qurilish-montaj ishlarining sifat nazorati quyidagi asosiy tamoyillar asosida amalga oshiriladi:
+            sifat nazoratini amalga oshirishning хolisligi va oshkoraligi;
+            yuridik va jismoniy shaхslarning huquqlari hamda qonuniy manfaatlariga daхl qilmaslik;
+            хoʻjalik yurituvchi sub’yektlarning moliyaviy-хoʻjalik faoliyatiga aralashmaslik.
+            
           </h1>
         </div>
       </div>

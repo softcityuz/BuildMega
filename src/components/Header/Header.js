@@ -7,8 +7,8 @@ import { useTranslation } from "react-i18next";
 function Header() {
   const { t } = useTranslation();
   const mapHeader = [
-    { id: 1, name: t("navbar1"), url: "*" },
-    { id: 2, name: t("navbar2"), url: "*" },
+    // { id: 1, name: t("navbar1"), url: "*" },
+    // { id: 2, name: t("navbar2"), url: "*" },
     { id: 3, name: t("navbar3"), url: "project" },
     { id: 4, name: t("navbar4"), url: "news" },
     { id: 5, name: t("navbar5"), url: "contact" },
@@ -28,7 +28,16 @@ function Header() {
             </Link>
           </div>
           <div className="links">
-            <ul>{HeaderMap}</ul>
+            <ul>
+              <li>
+                <a href="/#about">{t("navbar1")}</a>
+              </li>
+              <li>
+                <a href="/#hizmatlar">{t("navbar2")}</a>
+              </li>
+            
+              {HeaderMap}
+            </ul>
           </div>
         </div>
       </div>

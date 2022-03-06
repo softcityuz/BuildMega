@@ -69,7 +69,7 @@ const App = () => {
           <Header />
           <Routes>
             {mapRoute}
-            <Route path="*" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
           </Routes>
           <Footer />
         </>

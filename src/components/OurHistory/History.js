@@ -3,7 +3,7 @@ import img from "../../assets/1.jpg";
 import "./History.scss";
 function History() {
   return (
-    <div className="History">
+    <div className="History" id="about">
       <div className="container">
         <div className="row">
           <div className="col-md-6">

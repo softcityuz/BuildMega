@@ -54,7 +54,8 @@ function Services() {
     </div>
   ));
   return (
-    <div className="Services" id="services">
+
+    <div className="Services" id="hizmatlar">
       <div className="container">
         <div className="intro">
           <h2>Bizning ximatlar</h2>

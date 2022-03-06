@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import { Suspense } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Backdrop from "@material-ui/core/Backdrop";
+import { SingleProject } from "./pages/Project/SingleProject";
 import Footer from "./components/Footer/Footer";
 import { BackToTop } from "./BackToTop.js";
 import CircularProgress from "@material-ui/core/CircularProgress";
@@ -36,9 +37,11 @@ const App = () => {
     { id: 2, url: "singilur", kompannent: <SingleNews /> },
     { id: 3, url: "contact", kompannent: <Contact /> },
     { id: 4, url: "project", kompannent: <MainProject /> },
+    { id: 4, url: "project/singilurproject", kompannent: <SingleProject /> },
   ];
   const mapRoute = map.map((a) => (
-    <Route key={a.id}
+    <Route
+      key={a.id}
       path={a.url}
       element={
         <Suspense
@@ -66,7 +69,7 @@ const App = () => {
         </>
       ) : (
         <>
-              <BackToTop />
+          <BackToTop />
           <TopHeader />
           <Header />
           <Routes>

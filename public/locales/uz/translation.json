@@ -63,6 +63,12 @@
     "intro": "1994 yilda tashkil etilgan «Trastbank» aksiyadorlik birja banki O‘zbekiston Respublikasidagi eng etakchi banklaridan biri bo‘lib u o'z mijozlariga barcha turdagi keng ko‘lamli bank mahsulotlari va xizmatlarini ko‘rsatib kelmoqda. Bank tarixi mustaqillik yillarida respublikamiz bank sektorining muntazam rivojlanish sur’atlarini aks ettiradi.",
     "project": "Loyiha"
   },
+  "forForm": {
+    "name": "Ism",
+    "email": "Email",
+    "comment": "Sharh",
+    "button": "Yuborish"
+  },
   "loyihalar":"Loyihalar",
   "homapage_r":"Bosh sahifa",
   "ourproject":"Bizning loyihalar",

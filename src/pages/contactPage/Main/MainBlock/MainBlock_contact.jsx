@@ -60,7 +60,7 @@ function ContactForm({ handleSubmit }) {
 const ContactReduxForm = reduxForm({ form: " contact " })(ContactForm);
 export const MainBlock = () => {
   const onClick = (formData) => {
-  alert("salom dunyo!")
+  alert("Xabaringiz yuborildi!")
   };
   return (
     <div className={moduleName.body}>

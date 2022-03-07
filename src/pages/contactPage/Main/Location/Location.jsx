@@ -17,20 +17,20 @@ function LocationBlockContact({ picture, title, text, IconClass }) {
       <div className={moduleName.body}>
         <LocationBlockContact
           picture={faMapMarkerAlt}
-          title="adress "
-          text="Erkin 14"
+          title="Manzil"
+          text="Yashnobod,Parkent ko'chasi 74"
           id={moduleName.pin}
         />
         <LocationBlockContact
           picture={faPhoneAlt}
-          title="telefon "
-          text="90 528 - 07 - 70"
+          title="Telefon"
+          text="+998 99 969 00 70"
           id={moduleName.tel}
         />
         <LocationBlockContact
           picture={faEnvelope}
-          title="email "
-          text="tuhtaevarobiahon@gmail.com"
+          title="Email "
+          text="building_mega_service@mail.ru"
           id={moduleName.mail}
         />
       </div>

@@ -19,12 +19,19 @@
   }
   .row {
     margin: 20px 0;
-    @media all and (max-width:992px){
-      .col-md-4{
-          grid-template-columns: 35% 65% !important;
+    @media all and (max-width: 992px) {
+      .col-md-4 {
+        grid-template-columns: 35% 65% !important;
       }
     }
     .col-md-4 {
+      .info {
+        width: 100% !important;
+
+        h4 {
+          width: 100%;
+        }
+      }
       &:nth-child(1) {
         &:hover {
           .icon {
@@ -140,7 +147,7 @@
     }
   }
   .the_second {
-    @media all and (max-width:992px){
+    @media all and (max-width: 992px) {
       display: none;
     }
     .col-md-4 {

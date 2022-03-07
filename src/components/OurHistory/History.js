@@ -1,9 +1,10 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from "react";
 import img from "../../assets/1.jpg";
-import {useTranslation} from 'react-i18next'
-import { useSelector } from 'react-redux';
+import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 import "./History.scss";
-import { instance } from './../../api/api';
+import { instance } from "./../../api/api";
 function History() {
   const {t} = useTranslation()
    const [image, setImage] = useState([]);
@@ -12,14 +13,18 @@ function History() {
      instance.get("history/").then((response) => setImage(response.data));
    }, []);
    const map = image.map((a) => (
-     <>
-       {language === "uz" ? <>{a.name}</> 
-       : language === "ru" ? <>{a.nameRu}</> 
-       : <>..</>}
-     </>
+     <React.Fragment key={a.id}>
+       {language === "uz" ? (
+         <>{a.name}</>
+       ) : language === "ru" ? (
+         <>{a.nameRu}</>
+       ) : (
+         <>..</>
+       )}
+     </React.Fragment>
    ));
    const map2 = image.map((a) => (
-     <>
+     <React.Fragment key={a.id}>
        {language === "uz" ? (
          <>{a.description}</>
        ) : language === "ru" ? (
@@ -27,7 +32,7 @@ function History() {
        ) : (
          <>..</>
        )}
-     </>
+     </React.Fragment>
    ));
   return (
     <div className="History" id="about">

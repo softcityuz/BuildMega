@@ -1,66 +1,72 @@
 import React, { useState, useEffect } from "react";
 import "./Services.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHive } from "@fortawesome/free-brands-svg-icons";
-import {useTranslation} from 'react-i18next'
+// import { faHive } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import { instance } from "./../../api/api";
 
 import {
-
-  faUserGroup,
-  faRulerCombined,
+  // faUserGroup,
+  // faRulerCombined,
   faCity,
-  faHouseChimneyWindow,
-  faPencil,
+  // faHouseChimneyWindow,
+  // faPencil,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Services() {
-  const {t} = useTranslation()
-   const { language } = useSelector((state) => state.langReducer);    
+  const { t } = useTranslation();
+  const { language } = useSelector((state) => state.langReducer);
   const [image, setImage] = useState([]);
   useEffect(() => {
     instance.get("ourService/").then((response) => setImage(response.data));
   }, []);
-  const map = [
-    {
-      id: 1,
-      icon: faRulerCombined,
-      title1: t("ourServices.title1"),
-      title2: t("ourServices.subTitle1"),
-    },
-    {
-      id: 2,
-      icon: faUserGroup,
-      title1: t("ourServices.title2"),
-      title2: t("ourServices.subTitle2"),
-    },
-    {
-      id: 3,
-      icon: faHive,
-      title1: t("ourServices.title3"),
-      title2: t("ourServices.subTitle3"),
-    },
-  ];
+  // const map = [
+  //   {
+  //     id: 1,
+  //     icon: faRulerCombined,
+  //     title1: t("ourServices.title1"),
+  //     title2: t("ourServices.subTitle1"),
+  //   },
+  //   {
+  //     id: 2,
+  //     icon: faUserGroup,
+  //     title1: t("ourServices.title2"),
+  //     title2: t("ourServices.subTitle2"),
+  //   },
+  //   {
+  //     id: 3,
+  //     icon: faHive,
+  //     title1: t("ourServices.title3"),
+  //     title2: t("ourServices.subTitle3"),
+  //   },
+  // ];
   const map2 = image.map((a) => (
-    <div className="col-md-4">
+    <div className="col-md-4" key={a.id}>
       <div className="icon">
-        <FontAwesomeIcon icon={a.icon} />
+        <FontAwesomeIcon icon={faCity} />
       </div>
       <div className="info">
         {language === "uz" ? (
           <h4>{a.name}</h4>
         ) : language === "ru" ? (
-          <h4>{a.descriptionRu}</h4>
+          <h4>{a.nameRu}</h4>
         ) : (
           <>..</>
         )}
-        <p>{a.title2}</p>
+        <p>
+          {language === "uz" ? (
+            <>{a.description}</>
+          ) : language === "ru" ? (
+            <>{a.descriptionRu}</>
+          ) : (
+            <>..</>
+          )}
+        </p>
       </div>
     </div>
   ));
   return (
-
     <div className="Services" id="services">
       <div className="container">
         <div className="intro">

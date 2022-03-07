@@ -12,9 +12,7 @@ import { Link } from "react-router-dom";
 import i18n from "../../i18n";
 
 function TopHeader() {
-  const defaultLang = localStorage.getItem("lang")
-    ? localStorage.getItem("lang")
-    : "uz";
+  const defaultLang = localStorage.getItem("lang") || "uz";
   const [lang, setLang] = useState(defaultLang);
 
   const handleChange = (event) => {

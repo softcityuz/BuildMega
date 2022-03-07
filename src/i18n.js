@@ -10,7 +10,7 @@ i18n
   .init({
     lng: localStorage.getItem("lang"),
     fallbackLng: "uz",
-    debug: true,
+    debug: false,
     react: {
       useSuspense: false,
     },

@@ -17,7 +17,7 @@
 }
 
 .block_img {
-    color: #0969EB;
+    color: #FCB30F;
     transition: 0.3s all linear;
 }
 
@@ -40,7 +40,7 @@
     font-size  : 24px;
     font-family: var(--main-family);
     font-weight: bolder;
-    color      : #0969EB;
+    color      : #FCB30F;
 }
 
 .block_text {

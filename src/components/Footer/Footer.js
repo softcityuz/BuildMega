@@ -41,7 +41,7 @@ function Footer() {
             {t("footer.tell")} <a href="tel: +998 99 969 00 70">+998 99 969 00 70</a>
             </p>
             <p>
-            {t("footer.email")} <span>info@gmail.com</span>
+            {t("footer.email")} <span>building_mega_service@mail.ru</span>
             </p>
             <p>
             {t("footer.workTime")} <span>Du-Ju, 9:00 - 18:00</span>

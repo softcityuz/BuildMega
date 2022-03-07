@@ -62,9 +62,10 @@ export const MainBlock = () => {
   const onClick = (formData) => {
   alert("Xabaringiz yuborildi!")
   };
-  return (
+  const { t } = useTranslation();
+  return (  
     <div className={moduleName.body}>
-      <h1 className={moduleName.title}>Header</h1>
+      <h1 className={moduleName.title}>{t("forForm.connect")}</h1>
       <ContactReduxForm onSubmit={onClick} />
     </div>
   );

@@ -17,7 +17,6 @@ function History() {
               <p>
               {t('ourHistory.subTitle1')}
               </p>
-              <button>{t("seeMore")}</button>
             </div>
           </div>
           <div className="col-md-6">

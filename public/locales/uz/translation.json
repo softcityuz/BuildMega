@@ -6,7 +6,7 @@
   "navbar5": "Aloqa",
   "seeMore": "Ko'proq Ko'rish",
   "homeCarousel": {
-    "title1": "QURILISHLAR",
+    "title1": "HOLDING BUILD MEGA SERVICE",
     "title2": "SIFAT VA TEZLIK",
     "title3": "SHINAM VA ZAMONAVIY",
     "subTitle1": "BIZ QURGAN BINOLARNI LOYIHALAR BO'LIMIDA KO'RING",
@@ -18,9 +18,15 @@
     "title1": "Ofis binolarini rekonstruksiya qilish",
     "title2": "Binolarni kapital ta'mirlash",
     "title3": "Demontaj va yig'ish",
+    "title4": "Utilizatsiya",
+    "title5": "Logistika xizmatlari",
+    "title6": "Tashqi fasadlarni yuvish",
     "subTitle1": "Biz siz uchun ofis va binolaringizni chiroyli dizaynga va mijozlarni lol qoldiruvchi darajada o'zgartirib beramiz!",
     "subTitle2": "Eski ko'rinishdan yangicha va o'ziga xos ko'rinishga o'tish kompaniya uchun mijozlar oqimini oshirish uchun katta yordam beradi.",
-    "subTitle3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    "subTitle3": "Demontaj va yig'ish ishlari tez va sifatli chiqishiga kompaniyamiz javob beradi!",
+    "subTitle4": "Atrof muhitga zarar yetkazmaslik uchun bizning xizmatimizdan foydalaning!",
+    "subTitle5": "Biz sizning buyurtmalaringizni uyingizgacha yetkazib beramiz!",
+    "subTitle6": "Tashqi ko'rinish har doim ko'zga birinchi tashlanadi.Shunday ekan unga alohida e'tibor berish sizning biznesingiz uchun foydali!"
   },
   "ourHistory": {
     "intro": "BIZNING TARIX",
@@ -67,7 +73,8 @@
     "name": "Ism",
     "email": "Email",
     "comment": "Sharh",
-    "button": "Yuborish"
+    "button": "Yuborish",
+    "connect": "Bog'lanish"
   },
   "loyihalar":"Loyihalar",
   "homapage_r":"Bosh sahifa",

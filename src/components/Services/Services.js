@@ -32,6 +32,24 @@ function Services() {
       title1: t("ourServices.title3"),
       title2: t("ourServices.subTitle3"),
     },
+    {
+      id: 4,
+      icon: faCity,
+      title1: t("ourServices.title4"),
+      title2: t("ourServices.subTitle4"),
+    },
+    {
+      id: 5,
+      icon: faHouseChimneyWindow,
+      title1: t("ourServices.title5"),
+      title2: t("ourServices.subTitle5"),
+    },
+    {
+      id: 6,
+      icon: faPencil,
+      title1: t("ourServices.title6"),
+      title2: t("ourServices.subTitle6"),
+    },
   ];
   const map2 = map.map((a) => (
     <div className="col-md-4">
@@ -51,44 +69,7 @@ function Services() {
         <div className="intro">
           <h2>{t("ourServices.intro")}</h2>
         </div>
-        <div className="row">{map2}</div>
-        <div className="row the_second">
-          <div className="col-md-4">
-            <div className="icon">
-              <FontAwesomeIcon icon={faCity}></FontAwesomeIcon>
-            </div>
-            <div className="info">
-              <h5>PRE_CONSTRACTION SERVICES</h5>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy{" "}
-              </p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="icon">
-              <FontAwesomeIcon icon={faHouseChimneyWindow}></FontAwesomeIcon>
-            </div>
-            <div className="info">
-              <h5>PRE_CONSTRACTION SERVICES</h5>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy{" "}
-              </p>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="icon">
-              <FontAwesomeIcon icon={faPencil}></FontAwesomeIcon>
-            </div>
-            <div className="info">
-              <h5>PRE_CONSTRACTION SERVICES</h5>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy{" "}
-              </p>
-            </div>
-          </div>
+        <div className="row">{map2}
         </div>
       </div>
     </div>

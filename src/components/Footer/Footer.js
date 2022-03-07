@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {useTranslation} from 'react-i18next'
 import logo from "../../assets/white_logo.png";
 import "./Footer.scss";
 function Footer() {
+  const {t} = useTranslation();
   const map = [
-    { id: 1, to: "/", name: "Xizmatlar" },
-    { id: 2, to: "/", name: "Tariximiz" },
-    { id: 3, to: "/", name: "Loyihalar" },
-    { id: 4, to: "news", name: "Yangiliklar" },
+    { id: 1, to: "/", name: t("navbar2") },
+    { id: 2, to: "/", name:  t("navbar1")},
+    { id: 3, to: "/", name: t("navbar3") },
+    { id: 4, to: "news", name: t("navbar4") },
   ];
   const map2 = map.map((a) => (
     <li key={a.id}>
@@ -22,28 +24,27 @@ function Footer() {
             <img src={logo} alt="rasm bor edi!" />
           </a>
           <p>
-            Qanaqadir shior yoki uwanga uxwagan narsa yozildi i u uzzzuuu
-            bolishi kerekan
+            {t("footer.motto")}
           </p>
         </div>
         <div className="right_box">
           <div className="navigation">
-            <h4>Tezkor havolalar</h4>
+            <h6>{t("footer.quickLinks")}</h6>
             <ul>{map2}</ul>
           </div>
           <div className="contacts">
-            <h4>Aloqa</h4>
+            <h6>{t("navbar5")}</h6>
             <p>
-              Adress: <span>Yunusobod 14-daha,Toshkent</span>
+             <span>{t("footer.adress")}</span>
             </p>
             <p>
-              Phones: <a href="tel: +998 90 806 2004">+998 90 806 20 04</a>
+            {t("footer.tell")} <a href="tel: +998 99 969 00 70">+998 99 969 00 70</a>
             </p>
             <p>
-              Email: <span>info@gmail.com</span>
+            {t("footer.email")} <span>info@gmail.com</span>
             </p>
             <p>
-              Ish vaqti: <span>Du-Ju, 9:00 - 18:00</span>
+            {t("footer.workTime")} <span>Du-Ju, 9:00 - 18:00</span>
             </p>
           </div>
         </div>

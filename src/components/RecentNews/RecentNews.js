@@ -1,42 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {useTranslation} from 'react-i18next'
 import "./RecentNews.scss";
-import img1 from "../../assets/slider1.jpg";
-import img2 from "../../assets/slider2.jpg";
-import img3 from "../../assets/slider3.jpg";
+import img1 from "../../assets/projects/bogcha2.jpg";
+import img2 from "../../assets/projects/trastbank1.jpg";
+import img3 from "../../assets/projects/poliklinika1.jpg";
 function RecentNews() {
+  const {t} = useTranslation()
   const map = [
     {
       id: 1,
       img: img1,
-      title1: "Bke parts warehouse.DE",
+      title1: t("homeNews.title1"),
       date: "2022.04.03",
-      title2: `  We take our time for lunch, because we didn't have a breakfast.
-              Usually I don't eat breakfast,so My mother always punish me )`,
+      title2: t("homeNews.subTitle1"),
       link: "news",
     },
     {
       id: 2,
       img: img2,
-      title1: "Bke parts warehouse.DE",
+      title1: t("homeNews.title2"),
       date: "2022.04.03",
-      title2: `you should always have breakfast because breakfast is good for your health)`,
+      title2: t("homeNews.subTitle2"),
       link: "news",
     },
     {
       id: 3,
       img: img3,
-      title1: "Bke parts warehouse.DE",
+      title1: t("homeNews.title3"),
       date: "2022.04.03",
-      title2: `you should always have breakfast because breakfast is good for your health)`,
+      title2: t("homeNews.subTitle3"),
       link: "news",
-    },
+    }
   ];
   const map2 = map.map((a) => (
     <div className="col-md-4" key={a.id}>
-      <Link to="news">
+      <Link to="singilur">
         <div className="top">
-          <img src={img2} alt="Image" />
+          <img src={a.img} alt="Image" />
         </div>
         <div className="news_text">
           <h3>{a.title1}</h3>
@@ -50,7 +51,7 @@ function RecentNews() {
     <div className="RecentNews">
       <div className="container">
         <div className="intro">
-          <h2>So'ngi yangiliklar</h2>
+          <h2>{t("homeNews.intro")}</h2>
         </div>
         <div className="row">{map2}</div>
       </div>

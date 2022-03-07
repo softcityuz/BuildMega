@@ -1,29 +1,32 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import { Link } from 'react-router-dom'
+import {useTranslation} from 'react-i18next'
 import "./HomeCarousel.scss";
 
 function HomeCarousel() {
+  const {t} = useTranslation()
   const map = [
     {
       id: 1,
       clas1: "for_backline1",
       class2: "slider1",
-      title: "QURILISHLAR",
-      title2: "BIZ QURGAN BINOLARNI LOYIHALAR BO'LIMIDA KO'RING",
+      title: t("homeCarousel.title1"),
+      title2: t("homeCarousel.subTitle1"),
     },
     {
       id: 2,
       clas1: "for_backline2",
       class2: "slider2",
-      title: "QURILISHLAR",
-      title2: "Biz qurgan 10 ta binolarni qanday qurilganini koring",
+      title: t("homeCarousel.title2"),
+      title2: t("homeCarousel.subTitle2"),
     },
     {
       id: 3,
       clas1: "for_backline3",
       class2: "slider3",
-      title: "QURILISHLAR",
-      title2: "Biz qurgan 10 ta binolarni qanday qurilganini koring",
+      title: t("homeCarousel.title3"),
+      title2: t("homeCarousel.subTitle3"),
     },
   ];
   const map2 = map.map((a) => (
@@ -33,6 +36,7 @@ function HomeCarousel() {
           <div className="sometext">
             <h1>{a.title}</h1>
             <h4>{a.title2}</h4>
+            <Link className="to_other_page" to="/project">{t("seeMore")}</Link>
           </div>
         </div>
       </div>

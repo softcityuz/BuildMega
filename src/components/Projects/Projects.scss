@@ -1,10 +1,13 @@
 .projects {
   .wrapper {
+    @media all and (max-width:992px){
+      display: block;
+    }
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     .each_part {
       &:nth-child(1) {
-        background: url("../../assets/architecture1.jpg");
+        background: url("../../assets/projects/trastbank4.jpg");
         width: 100%;
         height: 300px;
         background-size: cover;
@@ -57,7 +60,7 @@
         }
       }
       &:nth-child(2) {
-        background: url("../../assets/architecture2.jpg");
+        background: url("../../assets/Build/ProCab1.jpg");
         width: 100%;
         height: 300px;
         background-size: cover;
@@ -110,7 +113,7 @@
         }
       }
       &:nth-child(3) {
-        background: url("../../assets/architecture3.jpg");
+        background: url("../../assets/projects/poliklinika1.jpg");
         width: 100%;
         height: 300px;
         background-size: cover;
@@ -163,7 +166,7 @@
         }
       }
       &:nth-child(4) {
-        background: url("../../assets/architecture4.jpg");
+        background: url("../../assets/Build/tash1.jpg");
         width: 100%;
         height: 300px;
         background-size: cover;
@@ -216,7 +219,7 @@
         }
       }
       &:nth-child(5) {
-        background: url("../../assets/architecture5.jpg");
+        background: url("../../assets/projects/bogcha1.jpg");
         width: 100%;
         height: 300px;
         background-size: cover;
@@ -269,7 +272,7 @@
         }
       }
       &:nth-child(6) {
-        background: url("../../assets/architecture6.jpg");
+        background: url("../../assets/projects/trastbankSam1.jpg");
         width: 100%;
         height: 300px;
         background-size: cover;
@@ -322,7 +325,7 @@
         }
       }
       &:nth-child(7) {
-        background: url("../../assets/slider1.jpg");
+        background: url("../../assets/Build/alutex1.jpg");
         width: 100%;
         height: 300px;
         background-size: cover;

@@ -11,15 +11,19 @@ import {
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import i18n from "../../i18n";
+import { useDispatch } from "react-redux";
+import { changeLanguage } from "../../redux/actions/langActions";
 
 function TopHeader() {
   const defaultLang = localStorage.getItem("lang") || "uz";
   const [lang, setLang] = useState(defaultLang);
+  const dispatch = useDispatch();
 
   const handleChange = (event) => {
     setLang(event.target.value);
     localStorage.setItem("lang", event.target.value);
     i18n.changeLanguage(event.target.value);
+    dispatch(changeLanguage(event.target.value));
   };
   const map = [
     { link: "/", id: 1, class: "facebook", icon: faFacebook },
@@ -47,8 +51,8 @@ function TopHeader() {
             </div>
             <div className="call_me">
               <a href="tel: +998 99 969 00 70">
-                <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> Phones : 
-                +998 99 969 00 70
+                <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> Phones : +998
+                99 969 00 70
               </a>
             </div>
           </div>

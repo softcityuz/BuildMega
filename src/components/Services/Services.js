@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Services.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHive } from "@fortawesome/free-brands-svg-icons";
 import {useTranslation} from 'react-i18next'
+import { useSelector } from "react-redux";
+import { instance } from "./../../api/api";
+
 import {
+
   faUserGroup,
   faRulerCombined,
   faCity,
@@ -13,6 +17,11 @@ import {
 
 function Services() {
   const {t} = useTranslation()
+   const { language } = useSelector((state) => state.langReducer);    
+  const [image, setImage] = useState([]);
+  useEffect(() => {
+    instance.get("ourService/").then((response) => setImage(response.data));
+  }, []);
   const map = [
     {
       id: 1,
@@ -33,13 +42,19 @@ function Services() {
       title2: t("ourServices.subTitle3"),
     },
   ];
-  const map2 = map.map((a) => (
+  const map2 = image.map((a) => (
     <div className="col-md-4">
       <div className="icon">
         <FontAwesomeIcon icon={a.icon} />
       </div>
       <div className="info">
-        <h5>{a.title1}</h5>
+        {language === "uz" ? (
+          <h4>{a.name}</h4>
+        ) : language === "ru" ? (
+          <h4>{a.descriptionRu}</h4>
+        ) : (
+          <>..</>
+        )}
         <p>{a.title2}</p>
       </div>
     </div>

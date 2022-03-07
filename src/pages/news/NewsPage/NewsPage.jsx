@@ -1,23 +1,44 @@
-import React  from "react";
+import React, { useState, useEffect } from "react";
 import style from "../HeaderNews/HeaderNews.module.css";
-import img from "../../../assets/1.jpg"
+import img from "../../../assets/1.jpg";
 import img2 from "../../../assets/architecture1.jpg";
 import "./MainNewsCopy.css";
 import { NavLink } from "react-router-dom";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
+import { instance } from "./../../../api/api";
 <link
   href="https://fonts.googleapis.com/css?family=Raleway:400,800,300"
   rel="stylesheet"
   type="text/css"
 ></link>;
- const NewsPage = (props) => {
-         const { t } = useTranslation();
-
-          const map23 = [
-            { id: 1, photoUrl: img, title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") },
-            { id: 2, photoUrl: img2,title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") },
-            { id: 3, photoUrl: img2,title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") }
-          ];
+const NewsPage = (props) => {
+  const { t } = useTranslation();
+  const map23 = [
+    {
+      id: 1,
+      photoUrl: img,
+      title_uz: t("poliknika_r"),
+      title_2: t("poliknikaraqami_r"),
+    },
+    {
+      id: 2,
+      photoUrl: img2,
+      title_uz: t("poliknika_r"),
+      title_2: t("poliknikaraqami_r"),
+    },
+    {
+      id: 3,
+      photoUrl: img2,
+      title_uz: t("poliknika_r"),
+      title_2: t("poliknikaraqami_r"),
+    },
+  ];
+  const [image, setImage] = useState([]);
+  const { language } = useSelector((state) => state.langReducer);
+  useEffect(() => {
+    instance.get("history/").then((response) => setImage(response.data));
+  }, []);
   const map2 = map23.map((a, index) => (
     <div
       key={index}
@@ -51,4 +72,4 @@ import { useTranslation } from 'react-i18next';
     </div>
   );
 };
-export default NewsPage
+export default NewsPage;

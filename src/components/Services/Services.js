@@ -67,7 +67,7 @@ function Services() {
           <h2>{t("ourServices.intro")}</h2>
         </div>
         <div className="row">{map2}</div>
-        <div className="row the_second">
+        {/* <div className="row the_second">
           <div className="col-md-4">
             <div className="icon">
               <FontAwesomeIcon icon={faCity}></FontAwesomeIcon>
@@ -104,7 +104,7 @@ function Services() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -8,16 +8,25 @@ function History() {
   const {t} = useTranslation()
    const [image, setImage] = useState([]);
     const {language} =useSelector((state)=>state.langReducer)    
-
    useEffect(() => {
      instance.get("history/").then((response) => setImage(response.data));
    }, []);
-   console.log(image);
    const map = image.map((a) => (
      <>
        {language === "uz" ? <>{a.name}</> 
        : language === "ru" ? <>{a.nameRu}</> 
        : <>..</>}
+     </>
+   ));
+   const map2 = image.map((a) => (
+     <>
+       {language === "uz" ? (
+         <>{a.description}</>
+       ) : language === "ru" ? (
+         <>{a.descriptionRu}</>
+       ) : (
+         <>..</>
+       )}
      </>
    ));
   return (
@@ -28,7 +37,7 @@ function History() {
             <div className="intro">
               <h3>{t("ourHistory.intro")}</h3>
               <h5>{map}</h5>
-              <p>{t("ourHistory.subTitle1")}</p>
+              <p>{map2}</p>
               <button>{t("seeMore")}</button>
             </div>
           </div>

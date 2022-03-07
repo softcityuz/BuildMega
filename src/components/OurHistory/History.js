@@ -1,25 +1,29 @@
 import React, { useState, useEffect } from "react";
 import img from "../../assets/1.jpg";
-import {useTranslation} from 'react-i18next'
-import { useSelector } from 'react-redux';
+import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 import "./History.scss";
-import { instance } from './../../api/api';
+import { instance } from "./../../api/api";
 function History() {
-  const {t} = useTranslation()
-   const [image, setImage] = useState([]);
-    const {language} =useSelector((state)=>state.langReducer)    
+  const { t } = useTranslation();
+  const [image, setImage] = useState([]);
+  const { language } = useSelector((state) => state.langReducer);
 
-   useEffect(() => {
-     instance.get("history/").then((response) => setImage(response.data));
-   }, []);
-   console.log(image);
-   const map = image.map((a) => (
-     <>
-       {language === "uz" ? <>{a.name}</> 
-       : language === "ru" ? <>{a.nameRu}</> 
-       : <>..</>}
-     </>
-   ));
+  useEffect(() => {
+    instance.get("history").then((response) => setImage(response.data));
+  }, []);
+  console.log(image);
+  const map = image.map((a) => (
+    <>
+      {language === "uz" ? (
+        <>{a.name}</>
+      ) : language === "ru" ? (
+        <>{a.nameRu}</>
+      ) : (
+        <>..</>
+      )}
+    </>
+  ));
   return (
     <div className="History" id="about">
       <div className="container">

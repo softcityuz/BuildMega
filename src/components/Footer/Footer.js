@@ -25,16 +25,24 @@ function Footer() {
     <div className="contacts" key={a.id}>
       <h6>{t("navbar5")}</h6>
       <p>
-        <span>{t("footer.adress")}</span>
+        <span>
+          {t("footer.adress")}{" "}
+          {language === "uz" ? (
+            <>{a.address}</>
+          ) : language === "ru" ? (
+            <>{a.addressRu}</>
+          ) : (
+            <>..</>
+          )}
+        </span>
       </p>
       <p>
-        {t("footer.tell")} <a href={"tel:"+a.phoneNumber}>{a.phoneNumber}</a>
+        {t("footer.tell")} <a href={"tel:" + a.phoneNumber}>{a.phoneNumber}</a>
       </p>
       <p>
         {t("footer.email")} <span>{a.email} </span>
       </p>
-      <p>
-      </p>
+      <p></p>
     </div>
   ));
   return (

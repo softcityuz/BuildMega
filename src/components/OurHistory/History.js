@@ -43,7 +43,7 @@ function History() {
               <h3>{t("ourHistory.intro")}</h3>
               <h5>{map}</h5>
               <p>{map2}</p>
-              <button>{t("seeMore")}</button>
+              {/* <button>{t("seeMore")}</button> */}
             </div>
           </div>
           <div className="col-md-6">

@@ -35,13 +35,13 @@ function TopHeader() {
   const map2 = socialNetworkUrl.map((a, index) => (
     <li key={a.id} className="insta">
       <a href={a.url}>
-        {a.id === 1 ? (
+        {a.socialNetwork.id === 1 ? (
           <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
-        ) : a.id === 2 ? (
+        ) : a.socialNetwork.id === 2 ? (
           <FontAwesomeIcon icon={faTelegramPlane}></FontAwesomeIcon>
-        ) : a.id === 3 ? (
+        ) : a.socialNetwork.id === 3 ? (
           <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
-        ) : a.id === 4 ? (
+        ) : a.socialNetwork.id === 4 ? (
           <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
         ) : (
           <>..</>

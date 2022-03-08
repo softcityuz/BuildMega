@@ -34,17 +34,6 @@ function Footer() {
         {t("footer.email")} <span>{a.email} </span>
       </p>
       <p>
-        {t("footer.workTime")}{" "}
-        <span>
-          {" "}
-          {language === "uz" ? (
-            <>{a.address}</>
-          ) : language === "ru" ? (
-            <>{a.addressRu}</>
-          ) : (
-            <>..</>
-          )}
-        </span>
       </p>
     </div>
   ));

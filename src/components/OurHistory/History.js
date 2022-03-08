@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from "react";
 import img from "../../assets/1.jpg";
 import { useTranslation } from "react-i18next";
@@ -8,13 +9,11 @@ function History() {
   const { t } = useTranslation();
   const [image, setImage] = useState([]);
   const { language } = useSelector((state) => state.langReducer);
-
   useEffect(() => {
-    instance.get("history").then((response) => setImage(response.data));
+    instance.get("history/").then((response) => setImage(response.data));
   }, []);
-  console.log(image);
   const map = image.map((a) => (
-    <>
+    <React.Fragment key={a.id}>
       {language === "uz" ? (
         <>{a.name}</>
       ) : language === "ru" ? (
@@ -22,7 +21,18 @@ function History() {
       ) : (
         <>..</>
       )}
-    </>
+    </React.Fragment>
+  ));
+  const map2 = image.map((a) => (
+    <React.Fragment key={a.id}>
+      {language === "uz" ? (
+        <>{a.description}</>
+      ) : language === "ru" ? (
+        <>{a.descriptionRu}</>
+      ) : (
+        <>..</>
+      )}
+    </React.Fragment>
   ));
   return (
     <div className="History" id="about">
@@ -32,8 +42,8 @@ function History() {
             <div className="intro">
               <h3>{t("ourHistory.intro")}</h3>
               <h5>{map}</h5>
-              <p>{t("ourHistory.subTitle1")}</p>
-              <button>{t("seeMore")}</button>
+              <p>{map2}</p>
+              {/* <button>{t("seeMore")}</button> */}
             </div>
           </div>
           <div className="col-md-6">

@@ -1,38 +1,52 @@
-import React  from "react";
+import React, { useState, useEffect } from "react";
 import style from "../HeaderNews/HeaderNews.module.css";
-import img from "../../../assets/1.jpg"
-import img2 from "../../../assets/architecture1.jpg";
 import "./MainNewsCopy.css";
+import img from "../../../assets/architecture3.jpg";
 import { NavLink } from "react-router-dom";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
+import { instance } from "./../../../api/api";
 <link
   href="https://fonts.googleapis.com/css?family=Raleway:400,800,300"
   rel="stylesheet"
   type="text/css"
 ></link>;
- const NewsPage = (props) => {
-         const { t } = useTranslation();
-
-          const map23 = [
-            { id: 1, photoUrl: img, title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") },
-            { id: 2, photoUrl: img2,title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") },
-            { id: 3, photoUrl: img2,title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") }
-          ];
-  const map2 = map23.map((a, index) => (
-    <div
-      key={index}
-      data-aos="fade-up"
-      data-aos-duration="700"
-      className={style.Kategoriya}
-    >
+const NewsPage = (props) => {
+  const { t } = useTranslation();
+  const [image, setImage] = useState([]);
+  const { language } = useSelector((state) => state.langReducer);
+  useEffect(() => {
+    instance.get("news/").then((response) => setImage(response.data));
+  }, []);
+  const map2 = image.map((a) => (
+    <div key={a.id} className={style.Kategoriya}>
       <div className="content">
         <div className="grid">
           <figure className="effect-bubba">
-            <img src={a.photoUrl} alt="bu yerda rasm bor edi!" />
+            <img
+              src={"https://javagenius.herokuapp.com" + a.attachment.url}
+              alt="bu yerda rasm bor edi!"
+            />
             <figcaption>
-              <NavLink to={"/singilur"}> </NavLink>
-              <h2> {a.title_uz}</h2>
-              <p> {a.title_2}</p>
+              <NavLink to={"singilur/" + a.id}> </NavLink>
+              <h2>
+                {language === "uz" ? (
+                  <>{a.name.split(" ").splice(0, 4).join(" ")}</>
+                ) : language === "ru" ? (
+                  <> {a.nameRu.split(" ").splice(0, 4).join(" ")}</>
+                ) : (
+                  <>..</>
+                )}
+              </h2>
+              <p>
+                {language === "uz" ? (
+                  <>{a.description.split(" ").splice(0, 4).join(" ")}</>
+                ) : language === "ru" ? (
+                  <> {a.descriptionRu.split(" ").splice(0, 4).join(" ")}</>
+                ) : (
+                  <>..</>
+                )}
+              </p>
             </figcaption>
           </figure>
         </div>
@@ -51,4 +65,4 @@ import { useTranslation } from 'react-i18next';
     </div>
   );
 };
-export default NewsPage
+export default NewsPage;

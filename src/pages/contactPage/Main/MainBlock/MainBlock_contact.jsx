@@ -16,7 +16,7 @@ function ContactForm({ handleSubmit }) {
       <div className={moduleName.inp_body}>
         <div className={moduleName.inp_with_label}>
           <label key={"name"} htmlFor="">
-            {t("forForm.name")}
+            {t("menu2Contact1")}
           </label>
           <Field
             value={"sd"}
@@ -29,7 +29,7 @@ function ContactForm({ handleSubmit }) {
         </div>
         <div className={moduleName.inp_with_label}>
           <label key={"name"} htmlFor="">
-            {t("forForm.email")}
+            {t("menu2Contact2")}
           </label>
           <Field
             name="email"
@@ -41,7 +41,7 @@ function ContactForm({ handleSubmit }) {
         </div>
       </div>
       <div id="comment" className={moduleName.inp_with_labelComment}>
-        <label htmlFor="comment">{t("forForm.comment")}</label>
+        <label htmlFor="comment">{t("menu2Contact3")}</label>
         <Field
           name="comment"
           component={Textarea}
@@ -52,19 +52,41 @@ function ContactForm({ handleSubmit }) {
           type="text"
         />
       </div>
-      <button>{t("forForm.button")}</button>
+      <button>{t("menu2ContactButton")}</button>
     </form>
   );
 }
 
 const ContactReduxForm = reduxForm({ form: " contact " })(ContactForm);
 export const MainBlock = () => {
+    const { t } = useTranslation();
   const onClick = (formData) => {
-  alert("salom dunyo!")
+    let email = formData.email;
+    let comment = formData.comment;
+    let name = formData.name;
+    fetch(`${process.env.REACT_APP_API_URL}userComment`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        comment: comment,
+      }),
+    })
+      .then(function (response) {})
+      .catch(function (error) {
+        console.log(error);
+      });
+    formData.name = "";
+    formData.email = "";
+    formData.comment = "";
+    alert("Xabaringiz yuborildi!");
   };
   return (
     <div className={moduleName.body}>
-      <h1 className={moduleName.title}>Header</h1>
+      <h1 className={moduleName.title}>{t("menuContact")}</h1>
       <ContactReduxForm onSubmit={onClick} />
     </div>
   );

@@ -3,10 +3,12 @@ import { reducer as formReduser } from "redux-form";
 // import thunkMiddleware from "redux-thunk";
 import NewsReduser from "./SingleNews";
 import langReducer from './langReducer';
+import ProjectReduser from "./SingleProject";
 const rootReducers = combineReducers({
   form: formReduser,
   news: NewsReduser,
   langReducer,
+  project:ProjectReduser
 });
 const compoceEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(

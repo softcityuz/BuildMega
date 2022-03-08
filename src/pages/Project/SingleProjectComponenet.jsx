@@ -1,33 +1,33 @@
 import React from "react";
 import { connect } from "react-redux";
 import { useParams } from "react-router-dom";
-import SingleNews from "./SingleNews";
-import { setNewsSingle } from "./../../redux/SingleNews";
 import { instance } from "./../../api/api";
+import { setProjectSingle } from './../../redux/SingleProject';
+import SingleProject from './SingleProject';
 const withRouter = (WrappedComponent) => (props) => {
   const params = useParams();
   return <WrappedComponent {...props} params={params} />;
 };
-class SingleCompanenty extends React.Component {
+class SingleProjectCompanenty extends React.Component {
   componentDidMount() {
     let userId = this.props.params.userId;
     instance
-      .get("news/" + userId)
-      .then((response) => this.props.setNewsSingle(response.data));
+      .get("project/" + userId)
+      .then((response) => this.props.setProjectSingle(response.data));
   }
   render() {
     console.log(this.props.news);
     return (
       <div>
-        <SingleNews news={this.props.news} {...this.props} />
+        <SingleProject news={this.props.news} {...this.props} />
       </div>
     );
   }
 }
 let mapStateToProps = (state) => ({
-  news: state.news.news,
+  news: state.project.news,
 });
-let WithDataContainerComponent = withRouter(SingleCompanenty);
-export default connect(mapStateToProps, { setNewsSingle })(
+let WithDataContainerComponent = withRouter(SingleProjectCompanenty);
+export default connect(mapStateToProps, { setProjectSingle })(
   WithDataContainerComponent
 );

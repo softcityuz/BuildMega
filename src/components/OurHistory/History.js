@@ -6,34 +6,34 @@ import { useSelector } from "react-redux";
 import "./History.scss";
 import { instance } from "./../../api/api";
 function History() {
-  const {t} = useTranslation()
-   const [image, setImage] = useState([]);
-    const {language} =useSelector((state)=>state.langReducer)    
-   useEffect(() => {
-     instance.get("history/").then((response) => setImage(response.data));
-   }, []);
-   const map = image.map((a) => (
-     <React.Fragment key={a.id}>
-       {language === "uz" ? (
-         <>{a.name}</>
-       ) : language === "ru" ? (
-         <>{a.nameRu}</>
-       ) : (
-         <>..</>
-       )}
-     </React.Fragment>
-   ));
-   const map2 = image.map((a) => (
-     <React.Fragment key={a.id}>
-       {language === "uz" ? (
-         <>{a.description}</>
-       ) : language === "ru" ? (
-         <>{a.descriptionRu}</>
-       ) : (
-         <>..</>
-       )}
-     </React.Fragment>
-   ));
+  const { t } = useTranslation();
+  const [image, setImage] = useState([]);
+  const { language } = useSelector((state) => state.langReducer);
+  useEffect(() => {
+    instance.get("history/").then((response) => setImage(response.data));
+  }, []);
+  const map = image.map((a) => (
+    <React.Fragment key={a.id}>
+      {language === "uz" ? (
+        <>{a.name}</>
+      ) : language === "ru" ? (
+        <>{a.nameRu}</>
+      ) : (
+        <>..</>
+      )}
+    </React.Fragment>
+  ));
+  const map2 = image.map((a) => (
+    <React.Fragment key={a.id}>
+      {language === "uz" ? (
+        <>{a.description}</>
+      ) : language === "ru" ? (
+        <>{a.descriptionRu}</>
+      ) : (
+        <>..</>
+      )}
+    </React.Fragment>
+  ));
   return (
     <div className="History" id="about">
       <div className="container">

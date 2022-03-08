@@ -2,10 +2,10 @@ import React from "react";
 import { Breadcrumb } from "./HeaderImg/Breadcrumb.jsx";
 import logo from "./HeaderImg/changed.jpg";
 import moduleName from "./Header_contact.module.css";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 function ContactHeader() {
-        const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>

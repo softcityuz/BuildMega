@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./HeaderNews.module.css";
 import { NavLink } from "react-router-dom";
-import { useTranslation } from 'react-i18next';
-import img from "../picture/video-2.mp4"
+import { useTranslation } from "react-i18next";
+import img from "../picture/video-2.mp4";
 // import MobileNav1 from "./../mobilnav/MobileNav1";
 const MainNews = (props) => {
-        const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div>

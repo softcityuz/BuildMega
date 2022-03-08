@@ -1,88 +1,86 @@
 /* ./HeaderImg */
 
 .body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .title {
-    width      : 100%;
-    font-family: var(--main-font-family);
-    font-style : normal;
-    font-weight: bolder;
-    font-size  : 46px;
-    line-height: 66px;
-    text-align : center;
-    color      : #FFFFFF;
+  width: 100%;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 46px;
+  line-height: 66px;
+  text-align: center;
+  color: #ffffff;
 }
-
 
 /* ./Breadcrumb */
 
 .breadcrumb {
-    display    : flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .breadcrumb a,
 .breadcrumb h3 {
-    font-family: var(--main-font-family);
-    font-style : normal;
-    font-weight: bolder;
-    font-size  : 20px;
-    line-height: 28px;
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .breadcrumb a {
-    color          : #fff;
-    margin-right   : 8px;
-    text-decoration: none;
+  color: #fff;
+  margin-right: 8px;
+  text-decoration: none;
 }
 
 .breadcrumb a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .breadcrumb h3 {
-    color : #FFC700;
-    margin: 0;
+  color: #ffc700;
+  margin: 0;
 }
 
-@media (min-width:0) and (max-width:749.9px) {
-   .title {
-    width      : 100%;
+@media (min-width: 0) and (max-width: 749.9px) {
+  .title {
+    width: 100%;
     font-family: var(--main-font-family);
-    font-style : normal;
+    font-style: normal;
     font-weight: bolder;
-    font-size  : 30px;
+    font-size: 30px;
     line-height: 66px;
-    text-align : center;
-    color      : #FFFFFF;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .breadcrumb a,
+  .breadcrumb h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
-    .breadcrumb a,
-    .breadcrumb h3 {
-        font-size  : 16px;
-        line-height: 20px;
-    }
-}
+@media (min-width: 750px) and (max-width: 1249.9px) {
+  .title {
+    margin: 0;
+    font-size: 40px;
+  }
 
-@media (min-width:750px) and (max-width:1249.9px) {
-
-    .title {
-        margin   : 0;
-        font-size: 40px;
-    }
-
-    .breadcrumb a,
-    .breadcrumb h3 {
-        font-size: 16px;
-    }
+  .breadcrumb a,
+  .breadcrumb h3 {
+    font-size: 16px;
+  }
 }

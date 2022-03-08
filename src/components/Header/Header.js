@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 function Header() {
   const { t } = useTranslation();
-  
+
   const mapHeader = [
     { id: 4, name: t("navbar4"), url: "news" },
     { id: 5, name: t("navbar5"), url: "contact" },
@@ -36,7 +36,7 @@ function Header() {
               <li>
                 <a href="/project">{t("navbar3")}</a>
               </li>
-            
+
               {HeaderMap}
             </ul>
           </div>

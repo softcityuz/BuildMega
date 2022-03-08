@@ -59,8 +59,30 @@ function ContactForm({ handleSubmit }) {
 
 const ContactReduxForm = reduxForm({ form: " contact " })(ContactForm);
 export const MainBlock = () => {
+
   const onClick = (formData) => {
-  alert("salom dunyo!")
+    let email = formData.email;
+    let comment = formData.comment;
+    let name = formData.name;
+    fetch(`${process.env.REACT_APP_API_URL}userComment`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        comment: comment,
+      }),
+    })
+      .then(function (response) {})
+      .catch(function (error) {
+        console.log(error);
+      });
+    formData.name = "";
+    formData.email = "";
+    formData.comment = "";
+    alert("Xabaringiz yuborildi!");
   };
   return (
     <div className={moduleName.body}>

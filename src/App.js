@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 import { BackToTop } from "./BackToTop.js";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import SingleNewsComponnet from "./pages/news/SingleNewsComponnet";
+import SingleProjectComponenet from "./pages/Project/SingleProjectComponenet";
 const MainProject = React.lazy(() => import("./pages/Project/MainProject"));
 const SingleProject = React.lazy(() => import("./pages/Project/SingleProject"));
 const News = React.lazy(() => import("./pages/news/News"));
@@ -38,7 +39,7 @@ const App = () => {
     // { id: 2, url: "news/singilur", kompannent: <SingleNews /> },
     { id: 3, url: "contact", kompannent: <Contact /> },
     { id: 4, url: "project", kompannent: <MainProject /> },
-    { id: 4, url: "project/singilurproject", kompannent: <SingleProject /> },
+    // { id: 4, url: "project/singilurproject", kompannent: <SingleProject /> },
   ];
   const mapRoute = map.map((a) => (
     <Route
@@ -79,6 +80,12 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="news/singilur" element={<SingleNewsComponnet />}>
               <Route path=":userId" element={<SingleNewsComponnet />} />
+            </Route>
+            <Route
+              path="project/singilur"
+              element={<SingleProjectComponenet />}
+            >
+              <Route path=":userId" element={<SingleProjectComponenet />} />
             </Route>
           </Routes>
           <Footer />

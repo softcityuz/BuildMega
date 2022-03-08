@@ -1,13 +1,12 @@
-import React from 'react'
-import  ProjectHeader  from './ProjectHeader';
-import {ProjectName} from "./ProjectName.jsx";
- const MainProject = () => {
+import React from "react";
+import ProjectHeader from "./ProjectHeader";
+import { ProjectName } from "./ProjectName.jsx";
+const MainProject = () => {
   return (
     <div>
-              <ProjectHeader/>
-              <ProjectName/>
-    
+      <ProjectHeader />
+      <ProjectName />
     </div>
-  )
-}
-export default MainProject
+  );
+};
+export default MainProject;

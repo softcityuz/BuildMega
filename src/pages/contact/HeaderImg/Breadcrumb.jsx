@@ -1,12 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import moduleName from "./HeaderImg.module.css";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 export const Breadcrumb = ({ pageNameForTitle, pageName }) => {
-          const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
-    
     <>
       <h1
         data-aos="fade-up"

@@ -1,11 +1,11 @@
 import React from "react";
 import MainNews from "./HeaderNews/HeaderNews";
-import NewsPage from './NewsPage/NewsPage';
+import NewsPage from "./NewsPage/NewsPage";
 const News = () => {
   return (
     <div>
       <MainNews />
-      <NewsPage/>
+      <NewsPage />
     </div>
   );
 };

@@ -14,16 +14,13 @@ import { instance } from "./../../../api/api";
 const NewsPage = (props) => {
   const { t } = useTranslation();
   const [image, setImage] = useState([]);
-    const { language } = useSelector((state) => state.langReducer);
+  const { language } = useSelector((state) => state.langReducer);
 
   useEffect(() => {
     instance.get("news/").then((response) => setImage(response.data));
   }, []);
   const map2 = image.map((a, index) => (
-    <div
-      key={index}
-      className={style.Kategoriya}
-    >
+    <div key={index} className={style.Kategoriya}>
       <div className="content">
         <div className="grid">
           <figure className="effect-bubba">

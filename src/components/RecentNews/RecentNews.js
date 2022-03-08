@@ -15,7 +15,7 @@ function RecentNews() {
   useEffect(() => {
     instance.get("news/").then((response) => setImage(response.data));
   }, []);
-  const map2 = image.map((a) => (
+  const map2 = image.slice(0,4).map((a) => (
     <div className="col-md-4" key={a.id}>
       <Link to={"news/singilur/" + a.id}>
         <div className="top">

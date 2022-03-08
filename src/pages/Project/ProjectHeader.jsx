@@ -2,9 +2,9 @@ import React from "react";
 import style from "../news/HeaderNews/HeaderNews.module.css";
 import { NavLink } from "react-router-dom";
 import img from "../../assets/architecture2.jpg";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 const ProjectHeader = (props) => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div>

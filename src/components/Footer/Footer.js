@@ -20,7 +20,7 @@ function Footer() {
     <div className="Footer">
       <div className="wrapper container">
         <div className="left_box">
-          <a href="/htt1/swsw">
+          <a href="/">
             <img src={logo} alt="rasm bor edi!" />
           </a>
           <p>
@@ -40,15 +40,16 @@ function Footer() {
             <p>
             {t("footer.tell")} <a href="tel: +998 99 969 00 70">+998 99 969 00 70</a>
             </p>
-            <p>
+            <p className="email">
             {t("footer.email")} <span>building_mega_service@mail.ru</span>
             </p>
-            <p>
+            <p className="worktime">
             {t("footer.workTime")} <span>Du-Ju, 9:00 - 18:00</span>
             </p>
           </div>
         </div>
       </div>
+      <p className="copyright">"MEGA BUILD" Holding. All right reserved. Copyright<a href="http://softcity.uz">SoftCity ©</a></p>
     </div>
   );
 }

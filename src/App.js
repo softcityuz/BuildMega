@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import { Routes, Route } from "react-router-dom";
 import TopHeader from "./components/TopHeader/TopHeader";
 import Header from "./components/Header/Header";
-import BurgerMenu from './components/BurgerMenu/BurgerMenu'
+import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
 import { Suspense } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Backdrop from "@material-ui/core/Backdrop";

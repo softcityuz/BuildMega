@@ -19,7 +19,11 @@ export const ProjectName = () => {
   }, []);
   const map = image.map((a) => (
     <div class="box">
-      <img class="main-img" src={img1} alt="image" />
+      <img
+        class="main-img"
+        src={"https://javagenius.herokuapp.com" + a.attachment.url}
+        alt="image"
+      />
       <div class="box-content">
         <NavLink to={"singilur/" + a.id} className="PageameNavlink">
           {" "}

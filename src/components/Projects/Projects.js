@@ -63,15 +63,23 @@ function Projects() {
   //   },
   // ];
   const map2 = image.slice(0, 8).map((a) => (
-    <div className="each_part" key={a.id}>
+    <div
+      className="each_part"
+      key={a.id}
+      style={{
+        backgroundImage: `url(${
+          "https://javagenius.herokuapp.com" + a.attachment.url
+        })`,
+      }}
+    >
       <Link to={"project/singilur/" + a.id}>
         <div className="in_wrapper">
           <div className="main_text">
             <h3>
               {language === "uz" ? (
-                <>{a.name}</>
+                <>{a.name.split(" ").splice(0, 4).join(" ")}</>
               ) : language === "ru" ? (
-                <> {a.nameRu}</>
+                <> {a.nameRu.split(" ").splice(0, 4).join(" ")}</>
               ) : (
                 <>..</>
               )}
@@ -80,9 +88,9 @@ function Projects() {
           <div className="hiidden_text">
             <p>
               {language === "uz" ? (
-                <>{a.description}</>
+                <>{a.description.split(" ").splice(0, 4).join(" ")}</>
               ) : language === "ru" ? (
-                <> {a.descriptionRu}</>
+                <> {a.descriptionRu.split(" ").splice(0, 4).join(" ")}</>
               ) : (
                 <>..</>
               )}

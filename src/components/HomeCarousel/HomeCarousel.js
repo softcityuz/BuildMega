@@ -37,7 +37,14 @@ function HomeCarousel() {
   // ];
   const map2 = image.map((a) => (
     <Carousel.Item key={a.id}>
-      <div className="for_backline1">
+      <div
+        className="for_backline1"
+        style={{
+          backgroundImage: `url(${
+            "https://javagenius.herokuapp.com" + a.attachment.url
+          })`,
+        }}
+      >
         <div className="slider1">
           <div className="sometext">
             <h1>

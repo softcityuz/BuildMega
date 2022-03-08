@@ -28,7 +28,11 @@ const SingleNews = (props) => {
     <div className={style.WrappererNews}>
       <div
         className={style.HeaderNews2}
-        style={{ backgroundImage: `url(${img})` }}
+        style={{
+          backgroundImage: `url(${
+            "https://javagenius.herokuapp.com" + props.news.attachment.url
+          })`,
+        }}
       >
         {language === "uz" ? (
           <h1>{props.news.name}</h1>

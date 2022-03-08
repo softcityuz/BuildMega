@@ -15,32 +15,34 @@ const NewsPage = (props) => {
   const { t } = useTranslation();
   const [image, setImage] = useState([]);
   const { language } = useSelector((state) => state.langReducer);
-
   useEffect(() => {
     instance.get("news/").then((response) => setImage(response.data));
   }, []);
-  const map2 = image.map((a, index) => (
-    <div key={index} className={style.Kategoriya}>
+  const map2 = image.map((a) => (
+    <div key={a.id} className={style.Kategoriya}>
       <div className="content">
         <div className="grid">
           <figure className="effect-bubba">
-            <img src={img} alt="bu yerda rasm bor edi!" />
+            <img
+              src={"https://javagenius.herokuapp.com" + a.attachment.url}
+              alt="bu yerda rasm bor edi!"
+            />
             <figcaption>
               <NavLink to={"singilur/" + a.id}> </NavLink>
               <h2>
                 {language === "uz" ? (
-                  <>{a.name.split(" ").splice(0, 10).join(" ")}</>
+                  <>{a.name.split(" ").splice(0, 4).join(" ")}</>
                 ) : language === "ru" ? (
-                  <> {a.nameRu.split(" ").splice(0, 10).join(" ")}</>
+                  <> {a.nameRu.split(" ").splice(0, 4).join(" ")}</>
                 ) : (
                   <>..</>
                 )}
               </h2>
               <p>
                 {language === "uz" ? (
-                  <>{a.description.split(" ").splice(0, 10).join(" ")}</>
+                  <>{a.description.split(" ").splice(0, 4).join(" ")}</>
                 ) : language === "ru" ? (
-                  <> {a.descriptionRu.split(" ").splice(0, 10).join(" ")}</>
+                  <> {a.descriptionRu.split(" ").splice(0, 4).join(" ")}</>
                 ) : (
                   <>..</>
                 )}

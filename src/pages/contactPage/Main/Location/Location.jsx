@@ -6,8 +6,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import moduleName from "./Location.module.css";
-import { useSelector } from 'react-redux';
-import { instance } from './../../../../api/api';
+import { useSelector } from "react-redux";
+import { instance } from "./../../../../api/api";
+import { useTranslation } from 'react-i18next';
 function LocationBlockContact({ picture, title, text, IconClass }) {
   return (
     <div className={moduleName.block}>
@@ -22,42 +23,43 @@ function LocationBlockContact({ picture, title, text, IconClass }) {
   );
 }
 const Location = () => {
-    const [image, setImage] = useState([]);
-    const { language } = useSelector((state) => state.langReducer);
-    useEffect(() => {
-      instance.get("contact/").then((response) => setImage(response.data));
-    }, []);
-    const map = image.map((a) => (
-      <>
-        {a.address}{" "}
-        {language === "uz" ? (
-          <>{a.address}</>
-        ) : language === "ru" ? (
-          <>{a.addressRu}</>
-        ) : (
-          <>..</>
-        )}
-      </>
-    ));
-  const map2 = image.map(a=><>{a.phoneNumber}</>)
+  const { t } = useTranslation();
+  const [image, setImage] = useState([]);
+  const { language } = useSelector((state) => state.langReducer);
+  useEffect(() => {
+    instance.get("contact/").then((response) => setImage(response.data));
+  }, []);
+  const map = image.map((a) => (
+    <>
+      {a.address}{" "}
+      {language === "uz" ? (
+        <>{a.address}</>
+      ) : language === "ru" ? (
+        <>{a.addressRu}</>
+      ) : (
+        <>..</>
+      )}
+    </>
+  ));
+  const map2 = image.map((a) => <>{a.phoneNumber}</>);
   const map3 = image.map((a) => <>{a.email}</>);
   return (
     <div className={moduleName.body}>
       <LocationBlockContact
         picture={faMapMarkerAlt}
-        title="adress "
+        title={t("menu1ContactAdress")}
         text={map}
         id={moduleName.pin}
       />
       <LocationBlockContact
         picture={faPhoneAlt}
-        title="telefon "
+        title={t("menu1ContactTel")}
         text={map2}
         id={moduleName.tel}
       />
       <LocationBlockContact
         picture={faEnvelope}
-        title="email "
+        title={t("menu2Contact2")}
         text={map3}
         id={moduleName.mail}
       />

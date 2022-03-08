@@ -37,11 +37,11 @@ function TopHeader() {
       <a href={a.url}>
         {a.id === 1 ? (
           <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
-        ) : a.id === 3 ? (
+        ) : a.id === 2 ? (
           <FontAwesomeIcon icon={faTelegramPlane}></FontAwesomeIcon>
-        ) : a.id === 4 ? (
+        ) : a.id === 3 ? (
           <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
-        ) : a.id === 5 ? (
+        ) : a.id === 4 ? (
           <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
         ) : (
           <>..</>

@@ -73,6 +73,16 @@
   "transbankfiliali_r":"TRASTBANK Samarqand filiali",
   "filialhaqida_r":"Obyetkt qurilish ishlari sifatli tarzda bank xavfsizlik tomonlarini o'ylagan holda puxta qilib qurilgan !",
   "yangilipage_r":"Yangilik",
-  "contact_r":"Aloqa"
+  "contact_r":"Aloqa",
+  "menuContact1": "Biznig manzli",
+  "menuContact2": "Ishonch telefoni",
+  "menuContact3": "Email",
+    "menu2Contact1": "Ism",
+  "menu2Contact2": "Email",
+  "menu2Contact3": "Izoh",
+    "menu2ContactButton": "Bosing",
+      "menuContact": "Bog'lanish",
+      "menu1ContactTel": "Telefon",
+  "menu1ContactAdress": "Manzil"
 
 }

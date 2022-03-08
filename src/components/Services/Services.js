@@ -44,7 +44,11 @@ function Services() {
   const map2 = image.map((a) => (
     <div className="col-md-4" key={a.id}>
       <div className="icon">
-        <FontAwesomeIcon icon={faCity} />
+        {/* <FontAwesomeIcon icon={faCity} /> */}
+        <img
+          src={"https://javagenius.herokuapp.com" + a.attachment.url}
+          alt="bu yerda rasm bor edi!"
+        />
       </div>
       <div className="info">
         {language === "uz" ? (
@@ -72,7 +76,14 @@ function Services() {
         <div className="intro">
           <h2>{t("ourServices.intro")}</h2>
         </div>
-        <div className="row">{map2}</div>
+        <div className="row">
+          {map2}
+          {map2}
+          {map2}
+          {map2}
+          {map2}
+          {map2}
+        </div>
         {/* <div className="row the_second">
           <div className="col-md-4">
             <div className="icon">

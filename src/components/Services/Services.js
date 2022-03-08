@@ -76,14 +76,7 @@ function Services() {
         <div className="intro">
           <h2>{t("ourServices.intro")}</h2>
         </div>
-        <div className="row">
-          {map2}
-          {map2}
-          {map2}
-          {map2}
-          {map2}
-          {map2}
-        </div>
+        <div className="row">{map2}</div>
         {/* <div className="row the_second">
           <div className="col-md-4">
             <div className="icon">

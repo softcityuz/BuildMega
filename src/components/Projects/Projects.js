@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {useTranslation} from 'react-i18next'
 import "./Projects.scss";
-import { use } from "i18next";
+// import { useTranslation } from "i18next";
 
 function Projects() {
   const {t} = useTranslation();

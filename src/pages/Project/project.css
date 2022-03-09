@@ -1,8 +1,24 @@
+@media (max-width:992px){
+  .ProjectName{
+    padding: 0 !important;
+  }
+}
 .PrejectName {
   margin-top: 1rem;
   padding: 1rem 3rem;
 }
-.wrapper{
+@media (max-width:992px){
+  .wrapper_project{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box{
+    width: 100% !important;
+    height: 250px !important;
+  }
+}
+.wrapper_project{
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }

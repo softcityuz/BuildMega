@@ -12,11 +12,11 @@ export const ProjectName = () => {
   return (
     <div className="PrejectName">
       <h1> {t("ourproject")}</h1>
-      <div className="wrapper">
+      <div className="wrapper_project">
         <div class="box">
           <img class="main-img" src={img1} alt="image" />
           <div class="box-content">
-            <NavLink to="singilurproject" className="PageameNavlink">
+            <NavLink to="singularproject1" className="PageameNavlink">
               {" "}
               <div class="item">{t("transbanktitle_r")}</div>
               <div class="description show-animate">{t("transbank_r")}</div>
@@ -26,7 +26,7 @@ export const ProjectName = () => {
         <div class="box">
           <img class="main-img" src={img2} alt="Image" />
           <div class="box-content">
-            <NavLink to="singilurproject" className="PageameNavlink">
+            <NavLink to="singularproject3" className="PageameNavlink">
               {" "}
               <div class="item">{t("poliknika_r")}</div>
               <div class="description show-animate">
@@ -38,7 +38,7 @@ export const ProjectName = () => {
         <div class="box">
           <img class="main-img" src={img3} alt="Image" />
           <div class="box-content">
-            <NavLink to="singilurproject" className="PageameNavlink">
+            <NavLink to="singularproject3" className="PageameNavlink">
               {" "}
               <div class="item">{t("transbankfiliali_r")}</div>
               <div class="description show-animate">{t("filialhaqida_r")}</div>

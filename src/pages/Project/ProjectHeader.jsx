@@ -3,7 +3,7 @@ import style from "../news/HeaderNews/HeaderNews.module.css";
 import { NavLink } from "react-router-dom";
 import img from "../../assets/architecture2.jpg";
 import { useTranslation } from 'react-i18next';
-const ProjectHeader1 = (props) => {
+const ProjectHeader = (props) => {
     const { t } = useTranslation();
 
   return (
@@ -37,4 +37,4 @@ const ProjectHeader1 = (props) => {
     </div>
   );
 };
-export default ProjectHeader1;
+export default ProjectHeader;

@@ -14,7 +14,7 @@ function RecentNews() {
       title1: t("homeNews.title1"),
       date: "2022.04.03",
       title2: t("homeNews.subTitle1"),
-      link: "singular1",
+      link: "news/singular1",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ function RecentNews() {
       title1: t("homeNews.title2"),
       date: "2022.04.03",
       title2: t("homeNews.subTitle2"),
-      link: "singular2",
+      link: "news/singular2",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ function RecentNews() {
       title1: t("homeNews.title3"),
       date: "2022.04.03",
       title2: t("homeNews.subTitle3"),
-      link: "singular3",
+      link: "news/singular3",
     }
   ];
   const map2 = map.map((a) => (

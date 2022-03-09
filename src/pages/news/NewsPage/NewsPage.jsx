@@ -1,9 +1,10 @@
 import React  from "react";
 import style from "../HeaderNews/HeaderNews.module.css";
-import img from "../../../assets/1.jpg"
-import img2 from "../../../assets/architecture1.jpg";
+import img from "../../../assets/projects/bogcha1.jpg"
+import img2 from "../../../assets/projects/trastbank4.jpg";
+import img3 from "../../../assets/projects/poliklinika1.jpg";
 import "./MainNewsCopy.css";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 <link
   href="https://fonts.googleapis.com/css?family=Raleway:400,800,300"
@@ -14,9 +15,9 @@ import { useTranslation } from 'react-i18next';
          const { t } = useTranslation();
 
           const map23 = [
-            { id: 1, photoUrl: img, title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") },
-            { id: 2, photoUrl: img2,title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") },
-            { id: 3, photoUrl: img2,title_uz: t("poliknika_r"),title_2:t("poliknikaraqami_r") }
+            { id: 1, photoUrl: img, title_uz: t("homeNews.title1"),title_2:t("homeNews.subTitle1") , link: "singular1" },
+            { id: 2, photoUrl: img2,title_uz: t("homeNews.title2"),title_2:t("homeNews.subTitle2") , link: "singular2" },
+            { id: 3, photoUrl: img3,title_uz: t("homeNews.title3"),title_2:t("homeNews.subTitle3") , link: "singular3" }
           ];
   const map2 = map23.map((a, index) => (
     <div
@@ -30,7 +31,7 @@ import { useTranslation } from 'react-i18next';
           <figure className="effect-bubba">
             <img src={a.photoUrl} alt="bu yerda rasm bor edi!" />
             <figcaption>
-              <NavLink to={"/singilur"}> </NavLink>
+              <Link to={a.link}> </Link>
               <h2> {a.title_uz}</h2>
               <p> {a.title_2}</p>
             </figcaption>

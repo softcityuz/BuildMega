@@ -1,10 +1,10 @@
 import React from 'react'
-import  ProjectHeader1  from './ProjectHeader1';
+import  ProjectHeader  from './ProjectHeader';
 import {ProjectName} from "./ProjectName.jsx";
  const MainProject = () => {
   return (
     <div>
-              <ProjectHeader1/>
+              <ProjectHeader/>
               <ProjectName/>
     
     </div>

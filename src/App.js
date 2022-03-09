@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import TopHeader from "./components/TopHeader/TopHeader";
 import Header from "./components/Header/Header";
 import BurgerMenu from './components/BurgerMenu/BurgerMenu'
+import ScrollToTop from './components/ScrollToTop'
 import { Suspense } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Backdrop from "@material-ui/core/Backdrop";
@@ -40,9 +41,9 @@ const App = () => {
   }, []);
   const map = [
     { id: 1, url: "news", kompannent: <News /> },
-    { id: 2, url: "singular1", kompannent: <SingleNews1 /> },
-    { id: 9, url: "singular2", kompannent: <SingleNews2 /> },
-    { id: 10, url: "singular3", kompannent: <SingleNews3 /> },
+    { id: 2, url: "news/singular1", kompannent: <SingleNews1 /> },
+    { id: 9, url: "news/singular2", kompannent: <SingleNews2 /> },
+    { id: 10, url: "news/singular3", kompannent: <SingleNews3 /> },
     { id: 3, url: "contact", kompannent: <Contact /> },
     { id: 4, url: "project", kompannent: <MainProject /> },
     { id: 5, url: "project/singularproject1", kompannent: <SingleProject1 /> },
@@ -81,6 +82,7 @@ const App = () => {
         </>
       ) : (
         <>
+          <ScrollToTop />
           <BackToTop />
           <TopHeader />
           <BurgerMenu />

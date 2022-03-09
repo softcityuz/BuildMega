@@ -13,8 +13,13 @@ import Footer from "./components/Footer/Footer";
 import { BackToTop } from "./BackToTop.js";
 import CircularProgress from "@material-ui/core/CircularProgress";
 const MainProject = React.lazy(() => import("./pages/Project/MainProject"));
-const SingleNews = React.lazy(() => import("./pages/news/SingleNews"));
-const SingleProject = React.lazy(() => import("./pages/Project/SingleProject"));
+const SingleNews1 = React.lazy(() => import("./pages/news/SingleNews1"));
+const SingleNews2 = React.lazy(() => import("./pages/news/SingleNews2"));
+const SingleNews3 = React.lazy(() => import("./pages/news/SingleNews3"));
+const SingleProject1 = React.lazy(() => import("./pages/Project/SingleProject1"));
+const SingleProject2 = React.lazy(() => import("./pages/Project/SingleProject2"));
+const SingleProject3 = React.lazy(() => import("./pages/Project/SingleProject3"));
+const SingleProject4 = React.lazy(() => import("./pages/Project/SingleProject4"));
 const News = React.lazy(() => import("./pages/news/News"));
 const Contact = React.lazy(() => import("./pages/contact/Contact"));
 const useStyles = makeStyles((theme) => ({
@@ -35,10 +40,15 @@ const App = () => {
   }, []);
   const map = [
     { id: 1, url: "news", kompannent: <News /> },
-    { id: 2, url: "singilur", kompannent: <SingleNews /> },
+    { id: 2, url: "singular1", kompannent: <SingleNews1 /> },
+    { id: 9, url: "singular2", kompannent: <SingleNews2 /> },
+    { id: 10, url: "singular3", kompannent: <SingleNews3 /> },
     { id: 3, url: "contact", kompannent: <Contact /> },
     { id: 4, url: "project", kompannent: <MainProject /> },
-    { id: 4, url: "project/singilurproject", kompannent: <SingleProject /> },
+    { id: 5, url: "project/singularproject1", kompannent: <SingleProject1 /> },
+    { id: 6, url: "project/singularproject2", kompannent: <SingleProject2 /> },
+    { id: 7, url: "project/singularproject3", kompannent: <SingleProject3 /> },
+    { id: 8, url: "project/singularproject4", kompannent: <SingleProject4 /> },
   ];
   const mapRoute = map.map((a) => (
     <Route

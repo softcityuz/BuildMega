@@ -2,9 +2,9 @@ import React from "react";
 import style from "../news/HeaderNews/HeaderNews.module.css";
 import {useTranslation} from 'react-i18next'
 import { NavLink } from "react-router-dom";
-import img from "../../assets/slider2.jpg";
+import img from "../../assets/Build/tash1.jpg";
 
-export function SingleHeader() {
+export function SingleHeader4() {
   const {t} = useTranslation();
   return <div>
     {/* <MobileNav1 /> */}
@@ -12,7 +12,7 @@ export function SingleHeader() {
       <img src={img} alt="rasm bor edi" />
       <div className={style.BlockLink}>
         <h1 data-aos="fade-up" data-aos-duration="1000">
-         {t("navbar3")}
+         {t("homeProjects.title4")}
         </h1>
         <NavLink
           data-aos="fade-up"

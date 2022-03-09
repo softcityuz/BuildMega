@@ -1,13 +1,13 @@
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
-import img1 from "../../assets/projects/trastbank1.jpg";
-import img2 from "../../assets/projects/trastbank2.jpg";
-import img3 from "../../assets/projects/trastbank3.jpg";
-import img4 from "../../assets/projects/trastbank4.jpg";
+import img1 from "../../assets/projects/poliklinika1.jpg";
+import img2 from "../../assets/projects/poliklinika2.jpg";
+import img3 from "../../assets/projects/poliklinika3.jpg";
+import img4 from "../../assets/projects/poliklinika4.jpg";
 
 import style from "./MainSingleProject.module.css";
 import {useTranslation} from 'react-i18next'
-export const MainSingleProject = () => {
+export const MainSingleProject3 = () => {
   const {t} = useTranslation()
   return (
     <div className={style.lavhalar}>

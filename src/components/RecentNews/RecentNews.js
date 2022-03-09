@@ -14,7 +14,7 @@ function RecentNews() {
       title1: t("homeNews.title1"),
       date: "2022.04.03",
       title2: t("homeNews.subTitle1"),
-      link: "news",
+      link: "singular1",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ function RecentNews() {
       title1: t("homeNews.title2"),
       date: "2022.04.03",
       title2: t("homeNews.subTitle2"),
-      link: "news",
+      link: "singular2",
     },
     {
       id: 3,
@@ -30,12 +30,12 @@ function RecentNews() {
       title1: t("homeNews.title3"),
       date: "2022.04.03",
       title2: t("homeNews.subTitle3"),
-      link: "news",
+      link: "singular3",
     }
   ];
   const map2 = map.map((a) => (
     <div className="col-md-4" key={a.id}>
-      <Link to="singilur">
+      <Link to={a.link}>
         <div className="top">
           <img src={a.img} alt="Image" />
         </div>

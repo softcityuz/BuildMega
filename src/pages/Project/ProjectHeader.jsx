@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "../news/HeaderNews/HeaderNews.module.css";
 import { NavLink } from "react-router-dom";
 import img from "../../assets/architecture2.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useTranslation } from 'react-i18next';
 const ProjectHeader = (props) => {
     const { t } = useTranslation();
+      useEffect(() => {
+        AOS.init();
+      }, []);
   return (
     <div>
       {/* <MobileNav1 /> */}
@@ -18,7 +23,7 @@ const ProjectHeader = (props) => {
           <NavLink
             data-aos="fade-up"
             data-aos-duration="700"
-            to="*"
+            to="/"
             className={style.Block1}
           >
             {t("homapage_r")}
@@ -26,7 +31,7 @@ const ProjectHeader = (props) => {
           <a
             data-aos="fade-up"
             data-aos-duration="700"
-            href="*"
+            href="project"
             className={style.Block2}
           >
             / {t("loyihalar")}

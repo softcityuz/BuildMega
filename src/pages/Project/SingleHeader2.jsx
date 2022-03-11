@@ -1,14 +1,16 @@
 import React from "react";
 import style from "../news/HeaderNews/HeaderNews.module.css";
-import {useTranslation} from 'react-i18next'
+import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import img from "../../assets/Build/ProCab1.jpg";
 
 export function SingleHeader2() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div>
       {/* <MobileNav1 /> */}
+      <div className={style.SingleNews1Wrapper}></div>
+
       <div className={style.HeaderNews}>
         <img src={img} alt="rasm bor edi" />
         <div className={style.BlockLink}>

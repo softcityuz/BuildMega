@@ -1,7 +1,14 @@
 .WrappererNews {
   overflow: hidden;
 }
-
+.SingleNews1Wrapper{
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+}
 .adc_malumot {
   width: 100%;
   color: grey !important;
@@ -24,8 +31,8 @@
 }
 .HeaderNews h1 {
   margin: 0 auto;
+  width: 100%;
 }
-
 .HeaderNews img {
   width: 100%;
   object-fit: cover;
@@ -59,6 +66,8 @@
 .BlockLink {
   position: absolute;
   width: 100%;
+  z-index: 100;
+  /* background-color: red; */
   text-align: center;
 }
 
@@ -92,6 +101,11 @@
 .BlockLink img {
   width: 100%;
 }
+ /* .HeaderNews a{
+ position: absolute;
+  z-index: 100;
+  margin-top: 4rem;
+  } */
 .SingleKatalog h1 {
   font-family: Roboto;
   font-weight: bold;
@@ -286,6 +300,7 @@
     font-size: 30px;
     margin-bottom: 0;
   }
+ 
 
   .Block1,
   .Block2 {

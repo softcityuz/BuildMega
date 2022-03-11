@@ -11,20 +11,16 @@ const SingleNews2 = (props) => {
         className={style.HeaderNews2}
         style={{ backgroundImage: `url(${img2})` }}
       >
-        <h1 data-aos="fade-up" data-aos-duration="1000">
+        <h1 >
           {t("homeNews.intro")}
         </h1>
       </div>
       <div
         className={style.SingleKatalog}
-        data-aos="fade-up"
-        data-aos-duration="1000"
       >
         <div className={style.discription} style={{ width: "100%" }}>
           <h1
             className={style.TitleName}
-            data-aos="fade-up"
-            data-aos-duration="1000"
           >
             {t("innerNews.title2")}
           </h1>

@@ -9,24 +9,15 @@ export function SingleHeader8() {
   return (
     <div>
       {/* <MobileNav1 /> */}
+      <div className={style.SingleNews1Wrapper}></div>
       <div className={style.HeaderNews}>
         <img src={img} alt="rasm bor edi" />
         <div className={style.BlockLink}>
-          <h1 >
-            {t("homeProjects.title8")}
-          </h1>
-          <NavLink
-           
-            to="/"
-            className={style.Block1}
-          >
+          <h1>{t("homeProjects.title8")}</h1>
+          <NavLink to="/" className={style.Block1}>
             {t("homapage_r")}
           </NavLink>
-          <a
-           
-            href="/project"
-            className={style.Block2}
-          >
+          <a href="/project" className={style.Block2}>
             / {t("innerProject.project")}{" "}
           </a>
         </div>

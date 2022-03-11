@@ -8,16 +8,15 @@ export function SingleHeader1() {
   const {t} = useTranslation();
   return (
     <div>
+      <div className={style.SingleNews1Wrapper}></div>
       {/* <MobileNav1 /> */}
       <div className={style.HeaderNews}>
         <img src={img} alt="rasm bor edi" />
         <div className={style.BlockLink}>
-          <h1 data-aos="fade-up" data-aos-duration="1000">
+          <h1 >
             {t("homeProjects.title1")}
           </h1>
           <NavLink
-            data-aos="fade-up"
-            data-aos-duration="700"
             to="/"
             className={style.Block1}
           >

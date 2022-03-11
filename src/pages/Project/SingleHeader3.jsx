@@ -9,23 +9,21 @@ export function SingleHeader3() {
   return (
     <div>
       {/* <MobileNav1 /> */}
+      <div className={style.SingleNews1Wrapper}></div>
+
       <div className={style.HeaderNews}>
         <img src={img} alt="rasm bor edi" />
         <div className={style.BlockLink}>
-          <h1 data-aos="fade-up" data-aos-duration="1000">
+          <h1>
             {t("homeProjects.title3")}
           </h1>
           <NavLink
-            data-aos="fade-up"
-            data-aos-duration="700"
             to="/"
             className={style.Block1}
           >
             {t("homapage_r")}
           </NavLink>
           <a
-            data-aos="fade-up"
-            data-aos-duration="700"
             href="/project"
             className={style.Block2}
           >

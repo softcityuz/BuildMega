@@ -25,7 +25,7 @@ export function SingleHeader7() {
         <a
           data-aos="fade-up"
           data-aos-duration="700"
-          href="*"
+          href="/project"
           className={style.Block2}
         >
           / {t("innerProject.project")} {" "}

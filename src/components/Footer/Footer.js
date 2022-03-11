@@ -6,8 +6,8 @@ import "./Footer.scss";
 function Footer() {
   const {t} = useTranslation();
   const map = [
-    { id: 1, to: "#about", name: t("navbar2") },
-    { id: 2, to: "#services", name:  t("navbar1")},
+    { id: 1, to: "/#about", name: t("navbar2") },
+    { id: 2, to: "/#services", name:  t("navbar1")},
     { id: 3, to: "project", name: t("navbar3") },
     { id: 4, to: "news", name: t("navbar4") },
   ];

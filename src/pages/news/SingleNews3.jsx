@@ -2,7 +2,6 @@ import React from "react";
 import style from "./HeaderNews/HeaderNews.module.css";
 import {useTranslation} from 'react-i18next'
 import img2 from "../../assets/projects/poliklinika1.jpg";
-
 const SingleNews3 = (props) => {
   const {t} = useTranslation();
   return (

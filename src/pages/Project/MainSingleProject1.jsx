@@ -11,7 +11,7 @@ export const MainSingleProject1 = () => {
   const {t} = useTranslation()
   return (
     <div className={style.lavhalar}>
-      <h1>{t('innerProject.intro')}</h1>
+      <h1>{t('innerProject.intro1')}</h1>
       <div className={style.lavhalar1}>
         <SRLWrapper>
           <div>

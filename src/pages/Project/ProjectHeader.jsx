@@ -13,6 +13,8 @@ const ProjectHeader = (props) => {
   return (
     <div>
       {/* <MobileNav1 /> */}
+      <div className={style.SingleNews1Wrapper}></div>
+
       <div className={style.HeaderNews}>
         <img src={img} alt="rasm bor edi!" />
 

@@ -6,14 +6,14 @@ import "./Footer.scss";
 function Footer() {
   const {t} = useTranslation();
   const map = [
-    { id: 1, to: "/", name: t("navbar2") },
-    { id: 2, to: "/", name:  t("navbar1")},
-    { id: 3, to: "/", name: t("navbar3") },
+    { id: 1, to: "#about", name: t("navbar2") },
+    { id: 2, to: "#services", name:  t("navbar1")},
+    { id: 3, to: "project", name: t("navbar3") },
     { id: 4, to: "news", name: t("navbar4") },
   ];
   const map2 = map.map((a) => (
     <li key={a.id}>
-      <Link to={a.to}>{a.name}</Link>
+      <a href={a.to}>{a.name}</a>
     </li>
   ));
   return (

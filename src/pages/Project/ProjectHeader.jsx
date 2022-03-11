@@ -5,7 +5,6 @@ import img from "../../assets/architecture2.jpg";
 import { useTranslation } from 'react-i18next';
 const ProjectHeader = (props) => {
     const { t } = useTranslation();
-
   return (
     <div>
       {/* <MobileNav1 /> */}

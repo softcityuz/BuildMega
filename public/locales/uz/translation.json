@@ -35,14 +35,22 @@
   },
   "homeProjects":{
     "seeProject": "Loyihani ko'rish",
-    "title1": "TRASTBANK",
-    "subTitle1": "Bu obyekt Bektemir tumani FOOD City xududida bank binosi",
+    "title1": "Food City",
+    "subTitle1": "FOOD City xududida Trastbankning yangi filialni qurishni yakunladik!",
     "title2": "ProCab kompaniyasi",
-    "subTitle2": "ProCab kompaniyasi bilan ancha yillardan beri hamkorlik qilib kelmmoqdamiz",
+    "subTitle2": "ProCab kompaniyasi bilan ancha yillardan beri hamkorlik qilib kelmoqdamiz",
     "title3": "Oilaviy Poliklinka",
     "subTitle3": "60-sonli oilaviy poliklinika qurilishi o'z nihoyasiga yetib foydalanishga topshirildi!",
     "title4": "Toshkent shahar xokimligi",
-    "subTitle4": "60-sonli oilaviy poliklinika qurilishi o'z nihoyasiga yetib foydalanishga topshirildi!"
+    "subTitle4": "Toshkent shahar hokimligi bilan tenderlar masalasida hamkorlik qilib kelinayapti",
+    "title5": "250-sonli bog'cha",
+    "subTitle5": "Bog'cha binosi to'liq bitgan holda foydalanishga topshirildi!",
+    "title6": "Samarqand Trastbank filiali",
+    "subTitle6": "Samarqandda hakorimiz Trastbankning yangi filiali qurib, foydalanishga topshirildi",
+    "title7": "Alutex", 
+    "subTitle7": "Alutex kompniyasining asosiy hamkori biz hisoblanamiz!",
+    "title8": "Multimodal Trans Terminal",
+    "subTitle8": "Bizga logistika xizmatlarida hamkorlik qiluvchi kompaniya"
   },
   "homeNews":{
     "intro":"So'ngi Yangiliklar",
@@ -70,8 +78,15 @@
     "subTitle3": "Oilaviy poliklinika to'liq montaj ishlari bitdi va yangi qismlari quirilish ishlari davom ettirilmoqda. Montaj ishlari cho'zilganligi sababli mazkur binoning ayrim bloklari vaqtinchalik faoliyat ko'rsatmay turadi.Oilaviy poliklinika to'liq montaj ishlari bitdi va yangi qismlari quirilish ishlari davom ettirilmoqda. Montaj ishlari cho'zilganligi sababli mazkur binoning ayrim bloklari vaqtinchalik faoliyat ko'rsatmay turadi."
   },
   "innerProject": {
-    "intro": "1994 yilda tashkil etilgan «Trastbank» aksiyadorlik birja banki O‘zbekiston Respublikasidagi eng etakchi banklaridan biri bo‘lib u o'z mijozlariga barcha turdagi keng ko‘lamli bank mahsulotlari va xizmatlarini ko‘rsatib kelmoqda. Bank tarixi mustaqillik yillarida respublikamiz bank sektorining muntazam rivojlanish sur’atlarini aks ettiradi.",
-    "project": "Loyiha"
+    "project": "Loyiha",
+    "intro1": "1994 yilda tashkil etilgan «Trastbank» aksiyadorlik birja banki O‘zbekiston Respublikasidagi eng etakchi banklaridan biri bo‘lib u o'z mijozlariga barcha turdagi keng ko‘lamli bank mahsulotlari va xizmatlarini ko‘rsatib kelmoqda. Bank tarixi mustaqillik yillarida respublikamiz bank sektorining muntazam rivojlanish sur’atlarini aks ettiradi.",
+    "intro2": "“ProCab” mas’uliyati cheklangan jamiyati qo‘shma korxonasi yuqori sifatli kabel va sim mahsulotlariga ichki va tashqi bozor talabini qondirish maqsadida 2012-yilda tashkil etilgan.Korxona tashkil etilganidan buyon bugungi kunga qadar zavodni modernizatsiya qilish uchun 40 million dollardan ortiq mablag‘ yo‘naltirildi. ProCab zavodi Toshkent shahrining Sergeli tumanida 14 gektar maydonda joylashgan.Korxonada Germaniya, Finlyandiya, Turkiya va Xitoyning yetakchi kompaniyalarining avtomatlashtirish va boshqarish vositalari bilan jihozlangan zamonaviy uskunalari yordamida kabel va simlar ishlab chiqariladi.Ishlab chiqarishni boshlagan kundan boshlab biz kabel mahsulotlariga bo‘lgan talab, taklif va bozor talablarini atroflicha o‘rgandik, buning natijasida mahsulotlarimiz turlarini sezilarli darajada oshirish imkonini berdi. Yangi mahsulotlar, texnologiyalar va yangi g'oyalarga doimiy sarmoya kiritilishi natijasida kompaniyamiz 2000 dan ortiq turdagi kabel mahsulotlari ishlab chiqargan holda sanoatning ushbu tarmog'ida juda mashhur bo'ldi.",
+    "intro3": "“O‘zbekiston Respublikasi Vazirlar Maxkamasining 2021 yil 20 avgusdagi 478-F-sonli farmoyishi ijrosini  ta'minlash maqsadida Toshkent shahar, Yakkasaroy tumanidagi  250 MTM, 323 MTM, 300 MTM, 8- tug‘ruq majmuasilari joriy ta'mirlash va 60 -   Oilaviy poliklinka mukammal ta'mirlash belgilangan.Hozirda ushbu ob'ektlarda joriy ta'mirlash va mukammal ta'mirlash ishlari nixoyasiga yetmoqda. Smeta xujjatlariga asosan ob'ektlarda ish olib borilgan va kelgusida sifatli va o‘z vaqtida foydalanishga topshirilgan.",
+    "intro4": "Toshkent shahar hokimligi (Islom Karimov ko‘chasi 51) – mahalliy davlat boshqaruv organi. O‘zbekiston Respublikasi Oliy Kengashining 1991 yil 18 noyabrda qabul qilingan “O‘zbekiston Respublikasi poytaxti – Toshkent shahri maqomi va tuzilmasi to‘g‘risida”gi qarorida Toshkent shahar Kengashining Toshkent shahar hokimligini tashkil etish va Toshkent shahar hokimi lavozimini joriy etish to‘g‘risidagi taklifi ma'qullandi.Toshkent shahar kengashining navbatdan tashqari 8-chaqiriq sessiyasida (1992 yil 11 yanvar') Toshkent shahar hokimligi (Toshkent shahar ijroiya qo‘mitasi negizida) tuzildi. Toshkent shahar hokimligi O‘zbekiston Respublikasi Konstitusiyasi va “Mahalliy davlat hokimiyati to‘g‘risida”gi qonunga muvofiq faoliyat yuritadi",
+    "intro5": "“O‘zbekiston Respublikasi Vazirlar Maxkamasining 2021 yil 20 avgusdagi 478-F-sonli farmoyishi ijrosini  ta'minlash maqsadida Toshkent shahar, Yakkasaroy tumanidagi  250 MTM, 323 MTM, 300 MTM, 8- tug‘ruq majmuasilari joriy ta'mirlash va 60 -   Oilaviy poliklinka mukammal ta'mirlash belgilangan.Hozirda ushbu ob'ektlarda joriy ta'mirlash va mukammal ta'mirlash ishlari nixoyasiga yetmoqda. Smeta xujjatlariga asosan ob'ektlarda ish olib borilgan va kelgusida sifatli va o‘z vaqtida foydalanishga topshirilgan.",
+    "intro6": "“Fitch” xalqaro reyting agentligi “Trastbank” XAB reytingi “B” darajasida ekanligini tasdiqladi2021-yil 25-noyabr kuni “Fitch Ratings-Moskva” reyting agentligi “Trastbank” xususiy aksiyadorlik bankiga o‘zining xorijiy va milliy valyutadagi uzoq muddatli emitent defolt reytingini (EDR) “Barqaror” prognozi bilan “B” darajasida hamda Barqarorlik reytingini (VR) “b” darajasida ekanligini qayta tasdiqladi.",
+    "intro7": "“Kompaniya tashkil topgan kundan boshlab biz har qanday ehtiyoj uchun yuqori sifatli va ishonchli alyuminiy profillarni ishlab chiqarish orqali har bir mijozning qulayligini ta'minlashga intilamiz: derazalar, tutqichlar va eshiklar, jabhalar, avtomobil profillari va panjaralarigacha. Yevropa va Osiyodan 100% sof alyuminiy va yuqori sifatli import qilingan komponentlar (masalan: bo‘yoq, kimyoviy moddalar va boshqalar) O‘zbekiston bozorida sifatli yetakchilik va har bir mijozga g‘amxo‘rlik haqida ishonch bilan gapirish imkonini beradi!",
+    "intro8": "Og'ir yuklarni yuklash, tushirish yuk ko'tarish quvvati 45 tonnagacha bo'lgan portal kran va yuk ko'tarish quvvati 10 tonnagacha bo'lgan avtokranlar tomonidan amalga oshiriladi.Terminal hududida bojxona tartib-taomillari bo‘yicha bojxona deklarantlari va sertifikatlashtirish hujjatlarini o‘z vaqtida rasmiylashtirish bo‘yicha “O‘zstandart” agentligi vakillari faoliyat yuritmoqda."
   },
   "forForm": {
     "name": "Ism",

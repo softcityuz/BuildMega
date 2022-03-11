@@ -21,6 +21,10 @@ const SingleProject1 = React.lazy(() => import("./pages/Project/SingleProject1")
 const SingleProject2 = React.lazy(() => import("./pages/Project/SingleProject2"));
 const SingleProject3 = React.lazy(() => import("./pages/Project/SingleProject3"));
 const SingleProject4 = React.lazy(() => import("./pages/Project/SingleProject4"));
+const SingleProject5 = React.lazy(() => import("./pages/Project/SingleProject5"));
+const SingleProject6 = React.lazy(() => import("./pages/Project/SingleProject6"));
+const SingleProject7 = React.lazy(() => import("./pages/Project/SingleProject7"));
+const SingleProject8 = React.lazy(() => import("./pages/Project/SingleProject8"));
 const News = React.lazy(() => import("./pages/news/News"));
 const Contact = React.lazy(() => import("./pages/contact/Contact"));
 const useStyles = makeStyles((theme) => ({
@@ -50,6 +54,10 @@ const App = () => {
     { id: 6, url: "project/singularproject2", kompannent: <SingleProject2 /> },
     { id: 7, url: "project/singularproject3", kompannent: <SingleProject3 /> },
     { id: 8, url: "project/singularproject4", kompannent: <SingleProject4 /> },
+    { id: 9, url: "project/singularproject5", kompannent: <SingleProject5 /> },
+    { id: 10, url: "project/singularproject6", kompannent: <SingleProject6 /> },
+    { id: 11, url: "project/singularproject7", kompannent: <SingleProject7 /> },
+    { id: 12, url: "project/singularproject8", kompannent: <SingleProject8 /> },
   ];
   const mapRoute = map.map((a) => (
     <Route

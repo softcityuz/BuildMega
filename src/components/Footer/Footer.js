@@ -49,7 +49,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className="copyright">"MEGA BUILD" Holding. All right reserved. Copyright<a href="http://softcity.uz">SoftCity ©</a></p>
+      <p className="copyright">"BUILDING MEGA SERVICE" Holding. All right reserved. Copyright<a href="http://softcity.uz">SoftCity ©</a></p>
     </div>
   );
 }

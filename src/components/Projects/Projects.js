@@ -33,28 +33,27 @@ function Projects() {
     },
     {
       id: 5,
-      title1: "250-sonli bog'cha",
-      title2: `Bog'cha binosi to'liq bitgan holda foydalanishga topshirildi!`,
-      url: "project/singularproject",
+      title1: t("homeProjects.title5"),
+      title2: t("homeProjects.subTitle5"),
+      url: "project/singularproject5",
     },
     {
       id: 6,
-      title1: "TRASTBANK Samarqand filiali",
-      title2: `Obyetkt qurilish ishlari sifatli tarzda bank xavfsizlik tomonlarini o'ylagan holda puxta qilib qurilgan !`,
-      url: "project/singilurproject",
+      title1: t("homeProjects.title6"),
+      title2: t("homeProjects.subTitle6"),
+      url: "project/singularproject6",
     },
     {
       id: 7,
-      title1: "ALUTEX",
-      title2: `ALUTEX firmasidan biz sifatli oynak va eshik romlarini harida qilamiz va binolari sifatli eshik oyna bilan jihozlaymiz !`,
-      url: "project/singilurproject",
+      title1: t("homeProjects.title7"),
+      title2: t("homeProjects.subTitle7"),
+      url: "project/singularproject7",
     },
     {
       id: 8,
-      title1: "HEALTHCARE",
-      title2: `Lorem ipsum dolor sit boshqa qismi esimda yo yana shu textdan 2
-              qator futbol oynamimzami`,
-      url: "project/singilurproject",
+      title1: t("homeProjects.title8"),
+      title2: t("homeProjects.subTitle8"),
+      url: "project/singularproject8",
     },
   ];
   const map2 = map.map((a) => (

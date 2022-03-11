@@ -2,7 +2,7 @@ import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 import img1 from "../../assets/projects/trastbankSam1.jpg";
 import img2 from "../../assets/projects/trastbankSam2.jpg";
-import img3 from "../../assets/projects/trastbankSam3.jpg";
+import img3 from "../../assets/projects/lamp.jpg";
 import img4 from "../../assets/projects/trastbankSam2.jpg";
 
 import style from "./MainSingleProject.module.css";

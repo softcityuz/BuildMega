@@ -1,9 +1,11 @@
+
 .lavhalar {
     margin: 30px 4.5%;
 }
 
 .lavhalar h1 {
-    font-family: 'Roboto';
+    font-family: 'Fredoka', sans-serif;
+    /* font-family: 'Roboto'; */
     font-size: 35px;
     margin: 2rem 0;
     font-weight: 700;

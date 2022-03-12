@@ -1,4 +1,7 @@
 .Header {
+  @media all and (max-width:992px){
+   display: none;
+  }
   background-color: transparent;
   height: auto;
   .container {
@@ -16,7 +19,7 @@
       .logo {
         img {
           z-index: 9000;
-          width: 80px;
+          width: 90px;
         }
       }
       .links {

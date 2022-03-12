@@ -15,7 +15,7 @@ function History() {
     <div className="History" id="about">
       <div className="container">
         <div className="row">
-          <div className="col-md-6"  data-aos="zoom-in-right">
+          <div className="col-md-6"  >
             <div className="intro">
               <h3>{t('ourHistory.intro')}</h3>
               <h5>
@@ -26,7 +26,7 @@ function History() {
               </p>
             </div>
           </div>
-          <div className="col-md-6"  data-aos="flip-up">
+          <div className="col-md-6"  >
             <img src={img} alt="Image for Web" />
           </div>
         </div>

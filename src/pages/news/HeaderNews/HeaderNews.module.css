@@ -89,7 +89,8 @@
 }
 
 .HeaderNews2 h1 {
-  font-family: Roboto;
+  /* font-family: Roboto; */
+  font-family: 'Fredoka', sans-serif;
   font-weight: bold;
   font-size: 56px;
   line-height: 128.7%;
@@ -107,7 +108,8 @@
   margin-top: 4rem;
   } */
 .SingleKatalog h1 {
-  font-family: Roboto;
+  /* font-family: Roboto; */
+  font-family: 'Fredoka', sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 50px;
@@ -124,7 +126,8 @@
 
 .BlockLink h1,
 .HeaderNews2 h1 {
-  font-family: Roboto;
+  /* font-family: Roboto; */
+  font-family: 'Fredoka', sans-serif;
   text-align: center;
   font-weight: bold;
   font-size: 46px;
@@ -139,7 +142,8 @@
 
 .Block1,
 .Block2 {
-  font-family: Roboto;
+  /* font-family: Roboto; */
+  font-family: 'Fredoka', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;

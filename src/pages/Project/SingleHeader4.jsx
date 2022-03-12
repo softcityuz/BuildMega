@@ -2,7 +2,7 @@ import React from "react";
 import style from "../news/HeaderNews/HeaderNews.module.css";
 import {useTranslation} from 'react-i18next'
 import { NavLink } from "react-router-dom";
-import img from "../../assets/Build/tash1.jpg";
+import img from "../../assets/Build/fasad1.jpg";
 
 export function SingleHeader4() {
   const {t} = useTranslation();

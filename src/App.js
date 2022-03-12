@@ -5,7 +5,6 @@ import HomePage from "./pages/HomePage";
 import { Routes, Route } from "react-router-dom";
 import TopHeader from "./components/TopHeader/TopHeader";
 import Header from "./components/Header/Header";
-import BurgerMenu from './components/BurgerMenu/BurgerMenu'
 import ScrollToTop from './components/ScrollToTop'
 import { Suspense } from "react";
 import { makeStyles } from "@material-ui/core/styles";
@@ -13,6 +12,7 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Footer from "./components/Footer/Footer";
 import { BackToTop } from "./BackToTop.js";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import MobileNav from "./components/MobileNav/MobileNav";
 const MainProject = React.lazy(() => import("./pages/Project/MainProject"));
 const SingleNews1 = React.lazy(() => import("./pages/news/SingleNews1"));
 const SingleNews2 = React.lazy(() => import("./pages/news/SingleNews2"));
@@ -90,10 +90,10 @@ const App = () => {
         </>
       ) : (
         <>
+          <MobileNav />
           <ScrollToTop />
           <BackToTop />
           <TopHeader />
-          <BurgerMenu />
           <Header />
           <Routes>
             {mapRoute}

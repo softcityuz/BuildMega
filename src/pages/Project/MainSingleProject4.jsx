@@ -1,9 +1,9 @@
 import React from "react";
 import { SRLWrapper } from "simple-react-lightbox";
-import img1 from "../../assets/Build/tash1.jpg";
-import img2 from "../../assets/Build/tash2.jpg";
-import img3 from "../../assets/Build/tash1.jpg";
-import img4 from "../../assets/Build/tash2.jpg";
+import img1 from "../../assets/Build/fasad1.jpg";
+import img2 from "../../assets/Build/fasad2.jpg";
+import img3 from "../../assets/Build/fasad3.jpg";
+import img4 from "../../assets/Build/fasad4.jpg";
 
 import style from "./MainSingleProject.module.css";
 import {useTranslation} from 'react-i18next'

@@ -1,0 +1,33 @@
+.MobileNav{
+    @media all and (max-width:992px){
+        display: block;
+    }
+    display: none;
+    .wrapper{
+            background-color: rgba(0, 0, 0, 0.678);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            z-index: 11000;
+            padding: 5px 0;
+            display: grid;
+            grid-template-columns:25% 75%;
+            .left_box{
+                width: 100%;
+                .logo{
+                    padding: 8px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .right_box{
+                width: 100%;
+                .select{
+                   position: absolute;
+                   top: 35px;
+                   right: 65px;
+                }
+            }
+        }
+}

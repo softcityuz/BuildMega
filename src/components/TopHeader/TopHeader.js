@@ -22,16 +22,16 @@ function TopHeader() {
     i18n.changeLanguage(event.target.value);
   };
   const map = [
-    { link: "/", id: 1, class: "facebook", icon: faFacebook },
-    { link: "/", id: 2, class: "tele", icon: faTelegramPlane },
-    { link: "/", id: 3, class: "insta", icon: faInstagram },
-    { link: "/", id: 4, class: "youtube", icon: faYoutube },
+    { link: "", id: 1, class: "facebook", icon: faFacebook },
+    { link: "https://t.me/buildingmegaservice", id: 2, class: "tele", icon: faTelegramPlane },
+    { link: "https://instagram.com/buildingmegaservice", id: 3, class: "insta", icon: faInstagram },
+    { link: "https://www.youtube.com/channel/UCiy_QNiEV6Z0KHCiHXObesg", id: 4, class: "youtube", icon: faYoutube },
   ];
   const map2 = map.map((a) => (
     <li key={a.id} className={a.class}>
-      <Link to={a.link}>
+      <a href={a.link} >
         <FontAwesomeIcon icon={a.icon}></FontAwesomeIcon>{" "}
-      </Link>
+      </a>
     </li>
   ));
   return (

@@ -1,6 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {useTranslation} from 'react-i18next'
+import {
+  faFacebook,
+  faInstagram,
+  faTelegramPlane,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 const Ul = styled.ul`
   display: none;
   list-style: none;
@@ -30,17 +37,23 @@ const Ul = styled.ul`
     }
   }
 `;
-
 const RightNav = ({ open }) => {
   const {t} = useTranslation()
   return (
     <Ul open={open}>
-      <li><a href="#about">{t("navbar1")}</a></li>
-      <li><a href="#services">{t("navbar2")}</a></li>
+      <li><a href="/#about">{t("navbar1")}</a></li>
+      <li><a href="/#services">{t("navbar2")}</a></li>
       <li><a href="/project">{t("navbar3")}</a></li>
       <li><a href="/news">{t("navbar4")}</a></li>
       <li><a href="/contact">{t("navbar5")}</a></li>
-      
+      <div className='socials'>
+          <ul>
+            <li><a href="/"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></a></li>
+            <li><a href="https://instagram.com/buildingmegaservice"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a></li>
+            <li><a href="https://t.me/buildingmegaservice"><FontAwesomeIcon icon={faTelegramPlane}></FontAwesomeIcon></a></li>
+            <li><a href="https://www.youtube.com/channel/UCdMGDShGgriZfRfvA2jb_iQ"><FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon></a></li>
+          </ul>
+      </div>
     </Ul>
   )
 }

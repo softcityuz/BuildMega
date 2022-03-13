@@ -31,3 +31,20 @@
             }
         }
 }
+.socials{
+    position: absolute;
+    bottom: 50px;
+    // margin-top: 200px;
+    ul{
+        padding-left: 0;
+        display: flex;
+        justify-content: flex-start;
+        li{
+            list-style-type: none;
+            svg{
+                font-size: 30px;
+                color: #F3BC0F;
+            }
+        }
+    }
+}

@@ -34,7 +34,10 @@
 .socials{
     position: absolute;
     bottom: 50px;
-    // margin-top: 200px;
+    @media all and (max-width:992px){
+        display: block;
+    }
+    display: none;
     ul{
         padding-left: 0;
         display: flex;

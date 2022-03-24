@@ -53,7 +53,7 @@ function TopHeader() {
             </div>
           </div>
           <div className="right_box">
-            <div className="socials">
+            <div className="socials_l">
               <ul>
                 <li className="facebook">
                   <div className="select">
